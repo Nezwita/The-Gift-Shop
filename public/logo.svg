@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="none"/>
+  
+  <!-- Stylized Gift Box / Skyline Icon -->
+  <path d="M50 80 L50 150 L150 150 L150 80 L100 50 Z" stroke="#101820" stroke-width="4" fill="none"/>
+  <path d="M50 80 L150 80" stroke="#101820" stroke-width="4" fill="none"/>
+  <path d="M100 50 L100 150" stroke="#101820" stroke-width="2" fill="none" stroke-dasharray="4"/>
+  
+  <!-- Accents in Gold -->
+  <circle cx="100" cy="50" r="8" fill="#C5B358"/>
+  <path d="M85 45 Q100 20 115 45" stroke="#C5B358" stroke-width="3" fill="none"/>
+</svg>

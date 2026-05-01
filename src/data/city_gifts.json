@@ -1,0 +1,283 @@
+{
+  "cities": [
+    {
+      "city": "New York",
+      "country": "USA",
+      "gifts": [
+        {
+          "name": "Statue of Liberty Replica",
+          "description": "A meticulously crafted miniature bronze Statue of Liberty, symbolizing the iconic symbol of freedom and American optimism. Hand-painted with aged patina finish.",
+          "price_range_usd": "45-120"
+        },
+        {
+          "name": "New York Style Bagels Gift Box",
+          "description": "Authentic New York-style boiled bagels from a legendary NYC bakery, shipped same-day. Includes sesame, everything, and plain varieties with cream cheese.",
+          "price_range_usd": "35-55"
+        },
+        {
+          "name": "Broadway Show Ticket Voucher",
+          "description": "A premium gift experience allowing the recipient to attend a world-class Broadway performance in the Theater District. Includes orchestra seating.",
+          "price_range_usd": "150-350"
+        },
+        {
+          "name": "Manhattan Skyline Art Print",
+          "description": "High-quality archival giclée print of the Manhattan skyline at sunset, printed on 300gsm cotton rag paper. Custom framing available.",
+          "price_range_usd": "75-200"
+        },
+        {
+          "name": "Financier Whiskey Selection",
+          "description": "A curated selection of premium small-batch American whiskeys, including limited releases from Brooklyn and Hudson Valley craft distilleries.",
+          "price_range_usd": "85-150"
+        }
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "country": "USA",
+      "gifts": [
+        {
+          "name": "Golden Gate Bridge Crystal Paperweight",
+          "description": "Hand-blown glass paperweight featuring an intricate laser-etched Golden Gate Bridge silhouette suspended in crystallized mineral oil.",
+          "price_range_usd": "55-95"
+        },
+        {
+          "name": "Ghirardelli Chocolate Collection",
+          "description": "Luxury gift box featuring Ghirardelli's renowned artisan chocolates, including 72% dark chocolate squares and sea salt caramels.",
+          "price_range_usd": "40-75"
+        },
+        {
+          "name": "Cable Car Music Box",
+          "description": "A vintage-style mechanical music box playing 'I Left My Heart in San Francisco' with a miniature hand-painted cable car.",
+          "price_range_usd": "65-110"
+        },
+        {
+          "name": "Sausalito Lavender Sachets",
+          "description": "Organic lavender sachets handcrafted in Sausalito, filled with locally grown Provence-style lavender. Comes with a silk ribbon.",
+          "price_range_usd": "25-45"
+        },
+        {
+          "name": "Napa Valley Wine Gift Set",
+          "description": "A premium selection of Napa Valley wines including Cabernet Sauvignon and Chardonnay, presented in a wooden gift box.",
+          "price_range_usd": "120-300"
+        }
+      ]
+    },
+    {
+      "city": "New Orleans",
+      "country": "USA",
+      "gifts": [
+        {
+          "name": "Café du Monde Beignets Sampler",
+          "description": "Authentic Café du Mondebeignets and chicory coffee mix, the legendary taste of New Orleans. Packaged in a collectible tin.",
+          "price_range_usd": "30-50"
+        },
+        {
+          "name": "Louisiana Crawfish Seasoning Set",
+          "description": "A set of four artisanal Louisiana spice blends including crawfish boil, blackening seasoning, jambalaya Roux, and Creole rub.",
+          "price_range_usd": "35-60"
+        },
+        {
+          "name": "Mardi Gras Mask Art",
+          "description": "Hand-constructed Venetian-style masquerade mask with Swarovski crystals and hand-painted gold leaf, created by New Orleans artisans.",
+          "price_range_usd": "95-175"
+        },
+        {
+          "name": "Preservation Hall Jazz Recording",
+          "description": "A limited-edition vinyl record from Preservation Hall Jazz Band, featuring classic New Orleans jazz with archival photographs.",
+          "price_range_usd": "45-80"
+        },
+        {
+          "name": "Voodoo Spirituality Set",
+          "description": "An authentic New Orleans voodoo starter kit including hand-poured candles, ceremonial herbs, and a guide to Louisiana spiritual traditions.",
+          "price_range_usd": "55-95"
+        }
+      ]
+    },
+    {
+      "city": "Paris",
+      "country": "France",
+      "gifts": [
+        {
+          "name": "Ladurée Macaron Collection",
+          "description": "An elegant gift box of 24 hand-crafted Ladurée macarons in classic flavors including rose, violet, caramel, and chocolate.",
+          "price_range_usd": "60-95"
+        },
+        {
+          "name": "Eiffel Tower Crystal Ornament",
+          "description": "A Baccarat crystal miniature Eiffel Tower with hand-etched details and 24k gold accents, presented in a velvet-lined box.",
+          "price_range_usd": "150-400"
+        },
+        {
+          "name": "Parfums de Nicola Fragrance",
+          "description": "A signature Parisian perfume custom-blended by artisan perfumers in Le Marais, with notes of iris, jasmine, and Parisian roses.",
+          "price_range_usd": "120-250"
+        },
+        {
+          "name": "Montmartre Artist Watercolor Set",
+          "description": "A professional watercolor set with hand-ground pigments from Montmartre artists' suppliers, including a sketchbook from a local paper mill.",
+          "price_range_usd": "85-140"
+        },
+        {
+          "name": "Hermès Silk Scarf",
+          "description": "An authentic Hermès silk twill scarf with hand-rolled edges, featuring classic Parisian motifs. Made in Lyon, France.",
+          "price_range_usd": "200-450"
+        }
+      ]
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "gifts": [
+        {
+          "name": "Fortnum & Mason Tea Selection",
+          "description": "The prestigious Royal Warrant holder's finest loose-leaf teas including Darjeeling, Earl Grey, and their exclusive Royal Blend.",
+          "price_range_usd": "55-95"
+        },
+        {
+          "name": "Thornes Piccadilly Chocolates",
+          "description": "Luxury English chocolates from the historic Thornton's store, including handcrafted truffles and butterscotch.",
+          "price_range_usd": "45-85"
+        },
+        {
+          "name": "Big Ben Clock Replica",
+          "description": "A handcrafted brass working clock inspired by the Elizabeth Tower, with Westminster chimes and a mahogany base.",
+          "price_range_usd": "90-175"
+        },
+        {
+          "name": "Burberry Trench Coat Belt",
+          "description": "An authentic Burberry leather belt with the signature check pattern, crafted in England with brass buckle.",
+          "price_range_usd": "180-300"
+        },
+        {
+          "name": "Royal Albert Bone China Cup Set",
+          "description": "A fine bone china tea for two set with hand-painted roses, made in Stoke-on-Trent. Includes saucers and matching teapot.",
+          "price_range_usd": "120-220"
+        }
+      ]
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "gifts": [
+        {
+          "name": "Murano Glass Centerpiece",
+          "description": "Hand-blown Murano glass vase with authentic millefiori pattern, created by master glassmakers on the island of Murano near Venice.",
+          "price_range_usd": "130-280"
+        },
+        {
+          "name": "Michelearena Leather Journal",
+          "description": "Handstitched Italian leather journal with Florentine tooling, filled with 200 pages of deckle-edged cotton paper.",
+          "price_range_usd": "75-130"
+        },
+        {
+          "name": "Valpolicella Wine Gift Set",
+          "description": "A collection of premium Veneto wines including Amarone and Valpolicella Classico in a handwoven straw basket.",
+          "price_range_usd": "95-180"
+        },
+        {
+          "name": "Vatican Rosetta Stone Replica",
+          "description": "A museum-quality replica of the Vatican's Rosetta Stone with hieroglyphic inscriptions, made from cast marble resin.",
+          "price_range_usd": "85-150"
+        },
+        {
+          "name": "Tuscan Olive Oil Collection",
+          "description": "Cold-pressed extra virgin olive oil from Chianti Classico estates, presented in hand-painted ceramic bottles.",
+          "price_range_usd": "65-120"
+        }
+      ]
+    },
+    {
+      "city": "Beijing",
+      "country": "China",
+      "gifts": [
+        {
+          "name": "Imperial Silk Scroll Painting",
+          "description": "Hand-painted traditional Chinese brush scroll featuring imperial scenes, created by artists in the style of the Ming Dynasty.",
+          "price_range_usd": "90-200"
+        },
+        {
+          "name": "Jingju Face Mask Opera",
+          "description": "Authentic Beijing Opera face masks hand-painted with symbolic colors representing different character traits from Chinese theater.",
+          "price_range_usd": "55-110"
+        },
+        {
+          "name": "Temple of Heaven Cloisonné Enamel",
+          "description": "Fine Chinese cloisonné enamel vessel with traditional imperial dragon patterns, crafted using ancient techniques.",
+          "price_range_usd": "120-250"
+        },
+        {
+          "name": "Peking Opera Singing Set",
+          "description": "A complete beginner's set for Peking opera singing including handmade erhu, traditional costume fabric, and instructional DVD.",
+          "price_range_usd": "85-160"
+        },
+        {
+          "name": "Ming Dynasty Style Porcelain Tea Set",
+          "description": "Authentic replica of Ming Dynasty imperial porcelain with cobalt blue patterns, featuring teapot and six cups in a wooden box.",
+          "price_range_usd": "150-350"
+        }
+      ]
+    },
+    {
+      "city": "Shanghai",
+      "country": "China",
+      "gifts": [
+        {
+          "name": "The Bund Art Deco Lamp",
+          "description": "A vintage-style Art Deco table lamp inspired by 1930s Shanghai architecture, with brass base and stained glass shade.",
+          "price_range_usd": "95-180"
+        },
+        {
+          "name": "Shanghai Tong Lor Spa Set",
+          "description": "Traditional Chinese aromatherapy spa set including foot bath herbs, jade roller, and silk eye pillow from local artisans.",
+          "price_range_usd": "65-120"
+        },
+        {
+          "name": "Nanhai Embroidery Panel",
+          "description": "Fine Suzhou-style silk embroidery featuring traditional Chinese landscape scenes, hand-stitched by master embroiderers.",
+          "price_range_usd": "130-300"
+        },
+        {
+          "name": "French Concession Wine Selection",
+          "description": "A curated selection of Chinese and French wines from Shanghai's former French Concession, presented in a silk-lined box.",
+          "price_range_usd": "100-220"
+        },
+        {
+          "name": "Old Shanghai Jazz Record Collection",
+          "description": "Vintage jazz recordings from Shanghai's 1930s era featuring the jazz age of old Shanghai with original album artwork.",
+          "price_range_usd": "55-95"
+        }
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "country": "China",
+      "gifts": [
+        {
+          "name": "Victoria Harbour Diamond Model",
+          "description": "A precision-crafted 24k gold-plated scale model of the Hong Kong skyline with working LED lights simulating Victoria Harbour.",
+          "price_range_usd": "180-350"
+        },
+        {
+          "name": "Dim Sum Cooking Kit",
+          "description": "Premium dim sum making kit including bamboo steamers, quality wrappers, and authentic ingredients with recipes from Michelin-starred chefs.",
+          "price_range_usd": "75-130"
+        },
+        {
+          "name": "Silk Phoenix Embroidery",
+          "description": "Hand-embroidered silk tapestry featuring the mythical Chinese phoenix, a symbol of grace and prosperity, in traditional Cantonese style.",
+          "price_range_usd": "150-280"
+        },
+        {
+          "name": "Wellington Building Crystal Paperweight",
+          "description": "A lead crystal paperweight featuring an etched miniature of Hong Kong's iconic clock tower, handcrafted in Bohemia.",
+          "price_range_usd": "65-115"
+        },
+        {
+          "name": "Hong Kong Craft Beer Selection",
+          "description": "A curated selection of Hong Kong craft beers including local IPAs and stouts from Hong Kong's emerging microbrewery scene.",
+          "price_range_usd": "50-90"
+        }
+      ]
+    }
+  ]
+}
