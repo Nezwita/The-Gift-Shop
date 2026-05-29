@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -18,12 +19,12 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-white/90 mb-10 font-body leading-relaxed max-w-2xl mx-auto">
           Discover hand-curated, iconic treasures from the world's most vibrant metropolises. From Parisian elegance to the energy of New York and the traditions of Beijing.
         </p>
-        <a 
-          href="#cities" 
+        <Link 
+          href="/cities" 
           className="inline-block bg-champagne-gold text-midnight-blue px-10 py-4 font-bold uppercase tracking-[0.2em] hover:bg-[#b0a04c] transition-all transform hover:-translate-y-1"
         >
           Explore the World
-        </a>
+        </Link>
       </div>
     </section>
   );

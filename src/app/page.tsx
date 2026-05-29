@@ -14,7 +14,7 @@ export default function Home() {
         <CitySection />
         
         {/* About / Mission Section */}
-        <section className="py-24 px-6 lg:px-12 bg-midnight-blue text-white overflow-hidden relative">
+        <section id="story" className="py-24 px-6 lg:px-12 bg-midnight-blue text-white overflow-hidden relative">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="text-3xl md:text-5xl font-bold mb-8 font-heading leading-tight">
               A Curation of Culture and <span className="text-champagne-gold">Craftsmanship</span>

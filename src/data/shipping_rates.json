@@ -1,0 +1,136 @@
+{
+  "cities_logistics": {
+    "USA": {
+      "New York": {
+        "fulfillment_hubs": ["Brooklyn, NY", "Jersey City, NJ"],
+        "standard_shipping": {"cost_range_usd": "8-20", "days": "2-5"},
+        "express_shipping": {"cost_range_usd": "25-50", "days": "1-2"},
+        "special_handling": "Wine and spirits require adult signature (+$5)"
+      },
+      "San Francisco": {
+        "fulfillment_hubs": ["South San Francisco, CA", "Oakland, CA"],
+        "standard_shipping": {"cost_range_usd": "10-22", "days": "3-6"},
+        "express_shipping": {"cost_range_usd": "30-55", "days": "1-3"},
+        "special_handling": "Wine shipments to CA require temperature-controlled transport"
+      },
+      "Los Angeles": {
+        "fulfillment_hubs": ["Culver City, CA", "Compton, CA"],
+        "standard_shipping": {"cost_range_usd": "8-20", "days": "2-5"},
+        "express_shipping": {"cost_range_usd": "25-50", "days": "1-2"},
+        "special_handling": "Entertainment merchandise may require franchise tax"
+      },
+      "Chicago": {
+        "fulfillment_hubs": ["Elk Grove Village, IL", "Chicago, IL"],
+        "standard_shipping": {"cost_range_usd": "10-20", "days": "3-6"},
+        "express_shipping": {"cost_range_usd": "28-50", "days": "1-3"},
+        "special_handling": "Midwest hub for cost-effective national coverage"
+      },
+      "New Orleans": {
+        "fulfillment_hubs": ["Harahan, LA"],
+        "standard_shipping": {"cost_range_usd": "12-24", "days": "4-7"},
+        "express_shipping": {"cost_range_usd": "35-60", "days": "2-3"},
+        "special_handling": "Humidity-sensitive items require desiccant packs"
+      }
+    },
+    "Europe": {
+      "London": {
+        "fulfillment_hubs": ["Croydon, UK", "Welwyn Garden City, UK"],
+        "standard_shipping": {"cost_range_eur": "10-25", "days": "3-7"},
+        "express_shipping": {"cost_range_eur": "30-55", "days": "1-2"},
+        "special_handling": "Post-Brexit customs forms required for EU shipments",
+        "brexit_notes": "VAT and customs duties apply to EU orders"
+      },
+      "Paris": {
+        "fulfillment_hubs": ["Roissy, FR", "Montreuil, FR"],
+        "standard_shipping": {"cost_range_eur": "8-20", "days": "2-5"},
+        "express_shipping": {"cost_range_eur": "25-45", "days": "1-2"},
+        "special_handling": "Luxury items require export documentation"
+      },
+      "Rome": {
+        "fulfillment_hubs": ["Pomezia, IT", "Fiumicino, IT"],
+        "standard_shipping": {"cost_range_eur": "10-22", "days": "3-6"},
+        "express_shipping": {"cost_range_eur": "28-50", "days": "1-3"},
+        "special_handling": "Artisanal food items require health certificates"
+      },
+      "Berlin": {
+        "fulfillment_hubs": ["Berlin-Spandau, DE"],
+        "standard_shipping": {"cost_range_eur": "8-18", "days": "2-5"},
+        "express_shipping": {"cost_range_eur": "22-40", "days": "1-2"},
+        "special_handling": "Packaging recycling fees may apply (VerpackG)"
+      },
+      "Barcelona": {
+        "fulfillment_hubs": ["Barcelona, ES", "Martorell, ES"],
+        "standard_shipping": {"cost_range_eur": "10-24", "days": "3-7"},
+        "express_shipping": {"cost_range_eur": "30-55", "days": "1-3"},
+        "special_handling": "EU shipping hub for Iberian Peninsula"
+      }
+    },
+    "China": {
+      "Beijing": {
+        "fulfillment_hubs": ["Beijing, CN", "Tianjin, CN"],
+        "standard_shipping": {"cost_range_usd": "10-25", "days": "3-7"},
+        "express_shipping": {"cost_range_usd": "30-60", "days": "1-3"},
+        "special_handling": "Export licenses required for antiques and cultural items",
+        "customs_notes": "Chinese customs clearance typically 2-5 days"
+      },
+      "Shanghai": {
+        "fulfillment_hubs": ["Shanghai, CN", "Suzhou, CN"],
+        "standard_shipping": {"cost_range_usd": "8-20", "days": "2-5"},
+        "express_shipping": {"cost_range_usd": "25-50", "days": "1-2"},
+        "special_handling": "Major port city - ideal for sea freight consolidation"
+      },
+      "Hong Kong": {
+        "fulfillment_hubs": ["Hong Kong, HK"],
+        "standard_shipping": {"cost_range_usd": "12-28", "days": "4-8"},
+        "express_shipping": {"cost_range_usd": "35-65", "days": "2-4"},
+        "special_handling": "No export duties, minimal customs friction",
+        "trade_notes": "Free port status simplifies international shipping"
+      },
+      "Guangzhou": {
+        "fulfillment_hubs": ["Guangzhou, CN", "Shenzhen, CN"],
+        "standard_shipping": {"cost_range_usd": "8-22", "days": "3-6"},
+        "express_shipping": {"cost_range_usd": "25-55", "days": "1-3"},
+        "special_handling": "Manufacturing hub - good for bulk orders"
+      },
+      "Chengdu": {
+        "fulfillment_hubs": ["Chengdu, CN", "Mianyang, CN"],
+        "standard_shipping": {"cost_range_usd": "12-28", "days": "4-8"},
+        "express_shipping": {"cost_range_usd": "35-65", "days": "2-4"},
+        "special_handling": "Land-locked city - expect longer transit to ports",
+        "notes": "Inland location increases shipping costs by 15-25%"
+      }
+    }
+  },
+  "cross_border_logistics": {
+    "usa_to_china": {
+      "standard_days": "14-28",
+      "express_days": "7-14",
+      "customs_clearance_days": "3-7",
+      "duties_note": "Chinese import duties 10-20% on gifts, may bewaived for personal shipments under 800 CNY"
+    },
+    "europe_to_usa": {
+      "standard_days": "10-21",
+      "express_days": "5-10",
+      "customs_clearance_days": "1-3",
+      "duties_note": "US import duties 0-20% depending on product category, $800 de minimis threshold"
+    },
+    "china_to_usa": {
+      "standard_days": "12-25",
+      "express_days": "5-10",
+      "customs_clearance_days": "3-5",
+      "duties_note": "Section 301 tariffs may apply on Chinese goods (7.5-25%)"
+    },
+    "europe_to_china": {
+      "standard_days": "14-28",
+      "express_days": "7-14",
+      "customs_clearance_days": "5-10",
+      "duties_note": "Chinese duties 10-25% on European goods, VAT refund available for exports"
+    }
+  },
+  "last_mile_providers": {
+    "USA": ["UPS", "FedEx", "USPS", "DHL eCommerce"],
+    "Europe": ["DHL", "UPS", "DPD", "Royal Mail", "La Poste", "Correos"],
+    "China": ["SF Express", "JD Logistics", "ZTO", "YTO", "China Post"]
+  },
+  "notes": "Fulfillment hub locations are approximate. Actual logistics may vary based on inventory location, carrier partnerships, and seasonal demand. Express shipping always includes tracking and insurance up to $100."
+}

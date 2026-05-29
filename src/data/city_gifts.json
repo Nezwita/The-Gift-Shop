@@ -278,6 +278,192 @@
           "price_range_usd": "50-90"
         }
       ]
+    },
+    {
+      "city": "Los Angeles",
+      "country": "USA",
+      "gifts": [
+        {
+          "name": "Hollywood Walk of Fame Star Keepsake",
+          "description": "A handcrafted brass replica of an iconic Hollywood Walk of Fame star, custom-engraved with a name of your choice in the classic terrazzo design.",
+          "price_range_usd": "75-150"
+        },
+        {
+          "name": "Venice Beach Skateboard Art",
+          "description": "A vintage 1980s skateboard deck transformed into wall art, hand-painted with Venice Beach murals and signed by local surf/skate artists.",
+          "price_range_usd": "90-180"
+        },
+        {
+          "name": "In-N-Out Burger Gift Bundle",
+          "description": "An authentic In-N-Out gift pack featuring branded merchandise including a baseball cap, t-shirt, and secret menu cookbook.",
+          "price_range_usd": "55-85"
+        },
+        {
+          "name": "Malibu Wine Country Photo Frame",
+          "description": "A panoramic walnut wood photo frame featuring a professionally matted image of Malibu vineyards at golden hour, with空间中认证本地酿酒师签名.",
+          "price_range_usd": "65-110"
+        },
+        {
+          "name": "Los Angeles Skyline Lighted Art",
+          "description": "A laser-cut acrylic art piece of the LA skyline with warm white LED lights, designed by local artists in the Arts District.",
+          "price_range_usd": "95-175"
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "country": "USA",
+      "gifts": [
+        {
+          "name": "Willis Tower Glass Block Set",
+          "description": "A set of three hand-etched glass blocks featuring the Willis Tower (Sears Tower) skyline, with internal LED lighting.",
+          "price_range_usd": "85-140"
+        },
+        {
+          "name": "Chicago Deep Dish Pizza Kit",
+          "description": "An authentic Chicago deep dish pizza making kit from Lou Malnati's, includes dough, sauce, and Wisconsin brick cheese with instructions.",
+          "price_range_usd": "60-95"
+        },
+        {
+          "name": "Wrigley Field Bleachers Blanket",
+          "description": "A vintage-style woven wool blanket featuring the Wrigley Field scoreboard and bleachers, made by Chicago textile artisans.",
+          "price_range_usd": "75-130"
+        },
+        {
+          "name": "Chicago Architecture River Cruise Voucher",
+          "description": "A gift voucher for a narrated architectural boat tour on the Chicago River, showcasing world-renowned skyscrapers and landmark buildings.",
+          "price_range_usd": "55-85"
+        },
+        {
+          "name": "Chicago Blues Archive Vinyl Collection",
+          "description": "A curated collection of classic Chicago blues vinyl records from Chess Records, featuring Muddy Waters, Howlin' Wolf, and Buddy Guy.",
+          "price_range_usd": "90-160"
+        }
+      ]
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "gifts": [
+        {
+          "name": "Berlin Wall Concrete Fragment",
+          "description": "An authenticated piece of the Berlin Wall with original paint and graffiti, comes with certificate of authenticity and display stand.",
+          "price_range_usd": "120-280"
+        },
+        {
+          "name": "Brandenburg Gate Crystal Model",
+          "description": "A hand-crafted lead crystal miniature of the Brandenburg Gate with gold-plated details, presented in a velvet-lined gift box.",
+          "price_range_usd": "95-180"
+        },
+        {
+          "name": "Berlin Philharmonic Concert Voucher",
+          "description": "A gift voucher for two seats at a Berlin Philharmonic concert, one of the world's finest orchestras performing in the iconic philharmonic hall.",
+          "price_range_usd": "150-350"
+        },
+        {
+          "name": "Bauhaus Design Desk Accessory Set",
+          "description": "A minimalist desk accessory set in authentic Bauhaus style including pen holder, paper tray, and letter opener, designed in 1920s style.",
+          "price_range_usd": "85-150"
+        },
+        {
+          "name": "Berlin Currywurst Spice Kit",
+          "description": "An authentic Currywurst spice kit from a legendary Berlin Imbiss, including the secret curry powder and tomato chili sauce recipe.",
+          "price_range_usd": "35-55"
+        }
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "country": "Spain",
+      "gifts": [
+        {
+          "name": "Gaudi Mosaic Lizard Sculpture",
+          "description": "A handcrafted ceramic lizard covered in traditional Catalan trencadís mosaic work, inspired by Gaudi's Park Güell designs.",
+          "price_range_usd": "90-175"
+        },
+        {
+          "name": "Barcelona Flamenco Dance Experience",
+          "description": "A gift package including tickets to an intimate flamenco show in the Gothic Quarter with pre-show tapas and a champagne reception.",
+          "price_range_usd": "130-250"
+        },
+        {
+          "name": "Santos Cantarera Nougat Selection",
+          "description": "A premium selection of artisanal Catalan nougat from the legendary Santos bakery, including saffron and almond varieties.",
+          "price_range_usd": "45-80"
+        },
+        {
+          "name": "Sagrada Familia Stained Glass Art",
+          "description": "A handcrafted stained glass panel featuring the intricate facade of the Sagrada Familia, made by local artisans in Barcelona.",
+          "price_range_usd": "150-300"
+        },
+        {
+          "name": "Catalan Wine and Cheese Gift Set",
+          "description": "A selection of Priorat and Penedès wines paired with authentic Manchego cheese and Catalan crackers, presented in a handwoven basket.",
+          "price_range_usd": "85-160"
+        }
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "country": "China",
+      "gifts": [
+        {
+          "name": "Cantonese Porcelain Tea Set",
+          "description": "A hand-painted porcelain tea set featuring traditional Cantonese motifs with cobalt blue on white, includes teapot and six cups.",
+          "price_range_usd": "120-220"
+        },
+        {
+          "name": "Cantonese Silk Embroidery Panel",
+          "description": "Fine silk embroidery featuring traditional Cantonese floral patterns with gold thread accents, created by master embroiderers in Guangzhou.",
+          "price_range_usd": "150-320"
+        },
+        {
+          "name": "Canton Tower Miniature Model",
+          "description": "A precision-crafted metallic miniature of the Canton Tower (CTU) withetched architectural details and a display base.",
+          "price_range_usd": "65-110"
+        },
+        {
+          "name": "White Lotus Tea Collection",
+          "description": "A premium collection of ancient white tea from the White Lotus Garden, pressed into traditional lotus-shaped cakes.",
+          "price_range_usd": "85-160"
+        },
+        {
+          "name": "Guangdong Lion Dance Mask",
+          "description": "A traditional Cantonese lion dance mask hand-painted with symbolic colors, used in the famous Guangdong lion dance performances.",
+          "price_range_usd": "55-100"
+        }
+      ]
+    },
+    {
+      "city": "Chengdu",
+      "country": "China",
+      "gifts": [
+        {
+          "name": "Giant Panda plush Companion",
+          "description": "An ultra-soft plush giant panda from the Chengdu Panda Base, made with sustainable bamboo fibers and comes with adoption certificate.",
+          "price_range_usd": "75-140"
+        },
+        {
+          "name": "Sichuan Opera Face Changing Set",
+          "description": "A complete Sichuan opera face-changing kit including traditional costume pieces, fans, and instructional DVD on the ancient art.",
+          "price_range_usd": "90-180"
+        },
+        {
+          "name": "Bamboo Tea Set from Chengdu",
+          "description": "An artisanal tea set carved from local Sichuan bamboo, includes gaiwan, teapot, and six cups with hand-carved bamboo tray.",
+          "price_range_usd": "95-170"
+        },
+        {
+          "name": "Sichuan Peppercorn Spice Collection",
+          "description": "A premium collection of Sichuan spices including the famous ma xiang la jiao peppercorns, ready-to-use mala seasoning, and Sichuan peppercorn oil.",
+          "price_range_usd": "45-85"
+        },
+        {
+          "name": "Du Fu Thatched Cottage Replica",
+          "description": "A miniature handcrafted wooden model of the Du Fu Thatched Cottage, the famous poet's former residence in Chengdu, with hand-painted details.",
+          "price_range_usd": "80-150"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,7 @@ interface ProductCardProps {
   country: string;
   priceRange: string;
   image: string;
+  citySlug?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ name, city, country, priceRange, image }) => {
