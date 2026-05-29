@@ -12,7 +12,7 @@ This document outlines the steps and prerequisites for deploying the CuratedCiti
 
 1.  **Clone the Repository**:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Nezwita/The-Gift-Shop.git
     cd gift-shop
     ```
 
