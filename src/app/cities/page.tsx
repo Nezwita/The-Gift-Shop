@@ -36,11 +36,23 @@ export default function CitiesPage() {
                       src={cityImages[city.city] || 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=600'} 
                       alt={city.city} 
                       fill 
-                      className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                      className={`object-cover transition-transform duration-500 ${city.active ? 'group-hover:scale-110' : 'grayscale contrast-125'}`} 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white">
-                      <h3 className="font-heading text-2xl group-hover:text-champagne-gold transition-colors">{city.city}</h3>
-                      <p className="text-champagne-gold uppercase text-sm tracking-widest font-bold mt-1">{city.country}</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
+                      <div className="flex justify-between items-end">
+                        <div>
+                          <h3 className="font-heading text-2xl group-hover:text-champagne-gold transition-colors">{city.city}</h3>
+                          <p className="text-champagne-gold uppercase text-sm tracking-widest font-bold mt-1 mb-3">{city.country}</p>
+                        </div>
+                        {!city.active && (
+                          <span className="bg-champagne-gold text-midnight-blue px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-3">Coming Soon</span>
+                        )}
+                      </div>
+                      {city.tagline && (
+                        <p className={`text-sm italic text-white/80 line-clamp-2 transform transition-all duration-300 ${city.active ? 'translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100' : 'opacity-100'}`}>
+                          "{city.tagline}"
+                        </p>
+                      )}
                     </div>
                   </Link>
                 ))}

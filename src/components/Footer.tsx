@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import WaitlistForm from './WaitlistForm';
 
 const Footer = () => {
   return (
@@ -40,16 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-bold mb-6 text-champagne-gold">Join our Newsletter</h4>
             <p className="text-warm-gray mb-6 font-body">Get travel inspiration and curated gift ideas delivered to your inbox.</p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-white/10 border-none px-4 py-3 w-full focus:ring-1 focus:ring-champagne-gold outline-none text-white font-body"
-              />
-              <button className="bg-champagne-gold text-midnight-blue px-6 py-3 font-bold uppercase tracking-widest text-xs hover:bg-[#b0a04c] transition-colors">
-                Join
-              </button>
-            </form>
+            <WaitlistForm variant="compact" />
           </div>
         </div>
         

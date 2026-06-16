@@ -5,14 +5,22 @@ export interface Gift {
   description: string;
   price_range_usd: string;
   image?: string;
-  story?: string;
+  story?: {
+    headline: string;
+    origin: string;
+    detail: string;
+    gift: string;
+  };
 }
 
 export interface City {
   city: string;
   country: string;
+  tagline?: string;
+  origin_story?: string;
   gifts: Gift[];
   image?: string;
+  active?: boolean;
 }
 
 export const getCities = (): City[] => {

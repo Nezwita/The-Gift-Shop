@@ -7,29 +7,62 @@
         {
           "name": "Statue of Liberty Replica",
           "description": "A meticulously crafted miniature bronze Statue of Liberty, symbolizing the iconic symbol of freedom and American optimism. Hand-painted with aged patina finish.",
-          "price_range_usd": "45-120"
+          "price_range_usd": "45-120",
+          "story": {
+            "headline": "Statue of Liberty Replica — A treasure from the heart of New York.",
+            "origin": "In the historic districts of New York, local makers have been refining their craft for generations. This statue of liberty replica is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New York. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "New York Style Bagels Gift Box",
           "description": "Authentic New York-style boiled bagels from a legendary NYC bakery, shipped same-day. Includes sesame, everything, and plain varieties with cream cheese.",
-          "price_range_usd": "35-55"
+          "price_range_usd": "35-55",
+          "story": {
+            "headline": "New York Style Bagels Gift Box — A treasure from the heart of New York.",
+            "origin": "In the historic districts of New York, local makers have been refining their craft for generations. This new york style bagels gift box is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New York. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Broadway Show Ticket Voucher",
           "description": "A premium gift experience allowing the recipient to attend a world-class Broadway performance in the Theater District. Includes orchestra seating.",
-          "price_range_usd": "150-350"
+          "price_range_usd": "150-350",
+          "story": {
+            "headline": "Broadway Ticket Voucher — The magic of the Great White Way.",
+            "origin": "Two blocks from Times Square, we partner with the district's legendary costume and stage makers to provide access to the world's most sought-after performances.",
+            "detail": "Each voucher is presented in a commemorative folio that carries the energy of opening night — the nerves, the hope, and the standing ovation.",
+            "gift": "Give this to someone who dares to dream big and loves the thrill of the theater."
+          }
         },
         {
           "name": "Manhattan Skyline Art Print",
           "description": "High-quality archival giclée print of the Manhattan skyline at sunset, printed on 300gsm cotton rag paper. Custom framing available.",
-          "price_range_usd": "75-200"
+          "price_range_usd": "75-200",
+          "story": {
+            "headline": "Manhattan Skyline Art Print — A treasure from the heart of New York.",
+            "origin": "In the historic districts of New York, local makers have been refining their craft for generations. This manhattan skyline art print is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New York. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Financier Whiskey Selection",
           "description": "A curated selection of premium small-batch American whiskeys, including limited releases from Brooklyn and Hudson Valley craft distilleries.",
-          "price_range_usd": "85-150"
+          "price_range_usd": "85-150",
+          "story": {
+            "headline": "Financier Whiskey Selection — A treasure from the heart of New York.",
+            "origin": "In the historic districts of New York, local makers have been refining their craft for generations. This financier whiskey selection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New York. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The city that never sleeps — and never stops inspiring.",
+      "origin_story": "New York is a collision of ambition and artistry. From the leather ateliers of Greenwich Village to the neon pulse of Broadway, every item here carries the energy of five boroughs, a million stories, and the belief that anything is possible. These are gifts from a city that dares you to dream bigger.",
+      "active": true
     },
     {
       "city": "San Francisco",
@@ -38,29 +71,62 @@
         {
           "name": "Golden Gate Bridge Crystal Paperweight",
           "description": "Hand-blown glass paperweight featuring an intricate laser-etched Golden Gate Bridge silhouette suspended in crystallized mineral oil.",
-          "price_range_usd": "55-95"
+          "price_range_usd": "55-95",
+          "story": {
+            "headline": "Golden Gate Bridge Crystal Paperweight — A treasure from the heart of San Francisco.",
+            "origin": "In the historic districts of San Francisco, local makers have been refining their craft for generations. This golden gate bridge crystal paperweight is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of San Francisco. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Ghirardelli Chocolate Collection",
           "description": "Luxury gift box featuring Ghirardelli's renowned artisan chocolates, including 72% dark chocolate squares and sea salt caramels.",
-          "price_range_usd": "40-75"
+          "price_range_usd": "40-75",
+          "story": {
+            "headline": "Ghirardelli Chocolate Collection — A treasure from the heart of San Francisco.",
+            "origin": "In the historic districts of San Francisco, local makers have been refining their craft for generations. This ghirardelli chocolate collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of San Francisco. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Cable Car Music Box",
           "description": "A vintage-style mechanical music box playing 'I Left My Heart in San Francisco' with a miniature hand-painted cable car.",
-          "price_range_usd": "65-110"
+          "price_range_usd": "65-110",
+          "story": {
+            "headline": "Cable Car Music Box — A treasure from the heart of San Francisco.",
+            "origin": "In the historic districts of San Francisco, local makers have been refining their craft for generations. This cable car music box is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of San Francisco. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Sausalito Lavender Sachets",
           "description": "Organic lavender sachets handcrafted in Sausalito, filled with locally grown Provence-style lavender. Comes with a silk ribbon.",
-          "price_range_usd": "25-45"
+          "price_range_usd": "25-45",
+          "story": {
+            "headline": "Sausalito Lavender Sachets — A treasure from the heart of San Francisco.",
+            "origin": "In the historic districts of San Francisco, local makers have been refining their craft for generations. This sausalito lavender sachets is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of San Francisco. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Napa Valley Wine Gift Set",
           "description": "A premium selection of Napa Valley wines including Cabernet Sauvignon and Chardonnay, presented in a wooden gift box.",
-          "price_range_usd": "120-300"
+          "price_range_usd": "120-300",
+          "story": {
+            "headline": "Napa Valley Wine Gift Set — A treasure from the heart of San Francisco.",
+            "origin": "In the historic districts of San Francisco, local makers have been refining their craft for generations. This napa valley wine gift set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of San Francisco. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The Golden Gate to innovation and artisan spirit.",
+      "origin_story": "San Francisco is where the fog rolls over the hills to meet a community of makers and dreamers. From the sourdough starters of Fisherman's Wharf to the tech-infused artistry of SoMa, every gift reflects the city's blend of natural beauty and forward-thinking craft.",
+      "active": false
     },
     {
       "city": "New Orleans",
@@ -69,29 +135,62 @@
         {
           "name": "Café du Monde Beignets Sampler",
           "description": "Authentic Café du Mondebeignets and chicory coffee mix, the legendary taste of New Orleans. Packaged in a collectible tin.",
-          "price_range_usd": "30-50"
+          "price_range_usd": "30-50",
+          "story": {
+            "headline": "Café du Monde Beignets Sampler — A treasure from the heart of New Orleans.",
+            "origin": "In the historic districts of New Orleans, local makers have been refining their craft for generations. This café du monde beignets sampler is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New Orleans. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Louisiana Crawfish Seasoning Set",
           "description": "A set of four artisanal Louisiana spice blends including crawfish boil, blackening seasoning, jambalaya Roux, and Creole rub.",
-          "price_range_usd": "35-60"
+          "price_range_usd": "35-60",
+          "story": {
+            "headline": "Louisiana Crawfish Seasoning Set — A treasure from the heart of New Orleans.",
+            "origin": "In the historic districts of New Orleans, local makers have been refining their craft for generations. This louisiana crawfish seasoning set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New Orleans. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Mardi Gras Mask Art",
           "description": "Hand-constructed Venetian-style masquerade mask with Swarovski crystals and hand-painted gold leaf, created by New Orleans artisans.",
-          "price_range_usd": "95-175"
+          "price_range_usd": "95-175",
+          "story": {
+            "headline": "Mardi Gras Mask Art — A treasure from the heart of New Orleans.",
+            "origin": "In the historic districts of New Orleans, local makers have been refining their craft for generations. This mardi gras mask art is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New Orleans. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Preservation Hall Jazz Recording",
           "description": "A limited-edition vinyl record from Preservation Hall Jazz Band, featuring classic New Orleans jazz with archival photographs.",
-          "price_range_usd": "45-80"
+          "price_range_usd": "45-80",
+          "story": {
+            "headline": "Preservation Hall Jazz Recording — A treasure from the heart of New Orleans.",
+            "origin": "In the historic districts of New Orleans, local makers have been refining their craft for generations. This preservation hall jazz recording is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New Orleans. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Voodoo Spirituality Set",
           "description": "An authentic New Orleans voodoo starter kit including hand-poured candles, ceremonial herbs, and a guide to Louisiana spiritual traditions.",
-          "price_range_usd": "55-95"
+          "price_range_usd": "55-95",
+          "story": {
+            "headline": "Voodoo Spirituality Set — A treasure from the heart of New Orleans.",
+            "origin": "In the historic districts of New Orleans, local makers have been refining their craft for generations. This voodoo spirituality set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of New Orleans. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The Big Easy, where every gift has a song.",
+      "origin_story": "New Orleans is a soulful blend of jazz, spice, and spirit. In the French Quarter, artisans hand-paint masks and blend chicory coffee as they have for centuries. A gift from New Orleans carries the warmth of the bayou and the rhythm of a city that knows how to celebrate life.",
+      "active": false
     },
     {
       "city": "Paris",
@@ -100,29 +199,62 @@
         {
           "name": "Ladurée Macaron Collection",
           "description": "An elegant gift box of 24 hand-crafted Ladurée macarons in classic flavors including rose, violet, caramel, and chocolate.",
-          "price_range_usd": "60-95"
+          "price_range_usd": "60-95",
+          "story": {
+            "headline": "Ladurée Macaron Collection — 24 moments of Parisian bliss.",
+            "origin": "In the heart of the 6th arrondissement, Ladurée has been perfecting the art of the macaron since 1862. Each delicate shell is hand-piped, rested for 48 hours, and filled with ganache made from French butter and Madagascar vanilla.",
+            "detail": "Look closely and you'll see the signature 'foot' — the ruffled base that only a true French macaron has. Pink rose, violet, caramel, and chocolate — each flavor tells a story of French patisserie.",
+            "gift": "Give this to someone who deserves a taste of Paris — even if they're miles away."
+          }
         },
         {
           "name": "Eiffel Tower Crystal Ornament",
           "description": "A Baccarat crystal miniature Eiffel Tower with hand-etched details and 24k gold accents, presented in a velvet-lined box.",
-          "price_range_usd": "150-400"
+          "price_range_usd": "150-400",
+          "story": {
+            "headline": "Eiffel Tower Crystal Ornament — A treasure from the heart of Paris.",
+            "origin": "In the historic districts of Paris, local makers have been refining their craft for generations. This eiffel tower crystal ornament is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Paris. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Parfums de Nicola Fragrance",
           "description": "A signature Parisian perfume custom-blended by artisan perfumers in Le Marais, with notes of iris, jasmine, and Parisian roses.",
-          "price_range_usd": "120-250"
+          "price_range_usd": "120-250",
+          "story": {
+            "headline": "Parfums de Nicola Fragrance — A treasure from the heart of Paris.",
+            "origin": "In the historic districts of Paris, local makers have been refining their craft for generations. This parfums de nicola fragrance is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Paris. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Montmartre Artist Watercolor Set",
           "description": "A professional watercolor set with hand-ground pigments from Montmartre artists' suppliers, including a sketchbook from a local paper mill.",
-          "price_range_usd": "85-140"
+          "price_range_usd": "85-140",
+          "story": {
+            "headline": "Montmartre Artist Watercolor Set — A treasure from the heart of Paris.",
+            "origin": "In the historic districts of Paris, local makers have been refining their craft for generations. This montmartre artist watercolor set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Paris. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Hermès Silk Scarf",
           "description": "An authentic Hermès silk twill scarf with hand-rolled edges, featuring classic Parisian motifs. Made in Lyon, France.",
-          "price_range_usd": "200-450"
+          "price_range_usd": "200-450",
+          "story": {
+            "headline": "Hermès Silk Scarf — The soul of Paris, hand-rolled.",
+            "origin": "Designed in the 1st arrondissement and crafted in Lyon, each Hermès scarf takes up to 18 months to create. The silk comes from mulberry silkworms, and each color is hand-screened one at a time.",
+            "detail": "The edges are hand-rolled by artisans who trained for two years to perfect the stitch. To a Parisienne, it's the difference between a scarf and an heirloom.",
+            "gift": "Give this to someone who values timeless elegance and the patient art of French craft."
+          }
         }
-      ]
+      ],
+      "tagline": "The city of light, captured in every detail.",
+      "origin_story": "Paris is a love letter to beauty. In the hidden courtyards of Le Marais, perfumers blend scents that have enchanted royalty. On the Rue de Rivoli, silk scarves are hand-rolled by artisans whose families have done so for generations. In Montmartre, watercolors capture light the way the Impressionists did. A gift from Paris isn't just an object — it's an invitation to see the world through French eyes.",
+      "active": true
     },
     {
       "city": "London",
@@ -131,29 +263,62 @@
         {
           "name": "Fortnum & Mason Tea Selection",
           "description": "The prestigious Royal Warrant holder's finest loose-leaf teas including Darjeeling, Earl Grey, and their exclusive Royal Blend.",
-          "price_range_usd": "55-95"
+          "price_range_usd": "55-95",
+          "story": {
+            "headline": "Fortnum & Mason Tea Selection — A treasure from the heart of London.",
+            "origin": "In the historic districts of London, local makers have been refining their craft for generations. This fortnum & mason tea selection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of London. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Thornes Piccadilly Chocolates",
           "description": "Luxury English chocolates from the historic Thornton's store, including handcrafted truffles and butterscotch.",
-          "price_range_usd": "45-85"
+          "price_range_usd": "45-85",
+          "story": {
+            "headline": "Thornes Piccadilly Chocolates — A treasure from the heart of London.",
+            "origin": "In the historic districts of London, local makers have been refining their craft for generations. This thornes piccadilly chocolates is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of London. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Big Ben Clock Replica",
           "description": "A handcrafted brass working clock inspired by the Elizabeth Tower, with Westminster chimes and a mahogany base.",
-          "price_range_usd": "90-175"
+          "price_range_usd": "90-175",
+          "story": {
+            "headline": "Big Ben Clock Replica — A treasure from the heart of London.",
+            "origin": "In the historic districts of London, local makers have been refining their craft for generations. This big ben clock replica is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of London. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Burberry Trench Coat Belt",
           "description": "An authentic Burberry leather belt with the signature check pattern, crafted in England with brass buckle.",
-          "price_range_usd": "180-300"
+          "price_range_usd": "180-300",
+          "story": {
+            "headline": "Burberry Trench Coat Belt — A treasure from the heart of London.",
+            "origin": "In the historic districts of London, local makers have been refining their craft for generations. This burberry trench coat belt is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of London. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Royal Albert Bone China Cup Set",
           "description": "A fine bone china tea for two set with hand-painted roses, made in Stoke-on-Trent. Includes saucers and matching teapot.",
-          "price_range_usd": "120-220"
+          "price_range_usd": "120-220",
+          "story": {
+            "headline": "Royal Albert Bone China Cup Set — A treasure from the heart of London.",
+            "origin": "In the historic districts of London, local makers have been refining their craft for generations. This royal albert bone china cup set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of London. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Tradition meets rebellion, in perfect measure.",
+      "origin_story": "London is a city of contrasts: the quiet ritual of afternoon tea coexists with the roar of Camden's markets. A Fortnum & Mason tea chest carries the weight of royal warrants, while a Burberry belt bears the check of British innovation. London gifts are for those who appreciate history — but aren't afraid to rewrite it.",
+      "active": false
     },
     {
       "city": "Rome",
@@ -162,29 +327,62 @@
         {
           "name": "Murano Glass Centerpiece",
           "description": "Hand-blown Murano glass vase with authentic millefiori pattern, created by master glassmakers on the island of Murano near Venice.",
-          "price_range_usd": "130-280"
+          "price_range_usd": "130-280",
+          "story": {
+            "headline": "Murano Glass Centerpiece — A thousand years of glass, in a single piece.",
+            "origin": "On the tiny island of Murano, near Venice, master glassmakers have been blowing glass since 1291. Using the same iron rods and furnaces as their ancestors, they create each piece by hand — twisting molten glass into the iconic millefiori (thousand flowers) pattern.",
+            "detail": "No two pieces are identical. The tiny bubbles trapped in the glass are not imperfections — they are the breath of the master, frozen in time.",
+            "gift": "Give this to someone who loves the imperfect, the handmade, the irreplaceable."
+          }
         },
         {
           "name": "Michelearena Leather Journal",
           "description": "Handstitched Italian leather journal with Florentine tooling, filled with 200 pages of deckle-edged cotton paper.",
-          "price_range_usd": "75-130"
+          "price_range_usd": "75-130",
+          "story": {
+            "headline": "Michelearena Leather Journal — A treasure from the heart of Rome.",
+            "origin": "In the historic districts of Rome, local makers have been refining their craft for generations. This michelearena leather journal is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Rome. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Valpolicella Wine Gift Set",
           "description": "A collection of premium Veneto wines including Amarone and Valpolicella Classico in a handwoven straw basket.",
-          "price_range_usd": "95-180"
+          "price_range_usd": "95-180",
+          "story": {
+            "headline": "Valpolicella Wine Gift Set — A treasure from the heart of Rome.",
+            "origin": "In the historic districts of Rome, local makers have been refining their craft for generations. This valpolicella wine gift set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Rome. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Vatican Rosetta Stone Replica",
           "description": "A museum-quality replica of the Vatican's Rosetta Stone with hieroglyphic inscriptions, made from cast marble resin.",
-          "price_range_usd": "85-150"
+          "price_range_usd": "85-150",
+          "story": {
+            "headline": "Vatican Rosetta Stone Replica — A treasure from the heart of Rome.",
+            "origin": "In the historic districts of Rome, local makers have been refining their craft for generations. This vatican rosetta stone replica is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Rome. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Tuscan Olive Oil Collection",
           "description": "Cold-pressed extra virgin olive oil from Chianti Classico estates, presented in hand-painted ceramic bottles.",
-          "price_range_usd": "65-120"
+          "price_range_usd": "65-120",
+          "story": {
+            "headline": "Tuscan Olive Oil Collection — A treasure from the heart of Rome.",
+            "origin": "In the historic districts of Rome, local makers have been refining their craft for generations. This tuscan olive oil collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Rome. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "La Dolce Vita, wrapped in a ribbon.",
+      "origin_story": "Rome wasn't built in a day — and neither are its gifts. Venetian masters still blow Murano glass using techniques from the Renaissance. Tuscan olive oil is pressed from trees that have watched empires rise and fall. A gift from Rome is a piece of 2,000 years of civilization, wrapped in Italian warmth.",
+      "active": false
     },
     {
       "city": "Beijing",
@@ -193,29 +391,62 @@
         {
           "name": "Imperial Silk Scroll Painting",
           "description": "Hand-painted traditional Chinese brush scroll featuring imperial scenes, created by artists in the style of the Ming Dynasty.",
-          "price_range_usd": "90-200"
+          "price_range_usd": "90-200",
+          "story": {
+            "headline": "Imperial Silk Scroll Painting — A treasure from the heart of Beijing.",
+            "origin": "In the historic districts of Beijing, local makers have been refining their craft for generations. This imperial silk scroll painting is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Beijing. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Jingju Face Mask Opera",
           "description": "Authentic Beijing Opera face masks hand-painted with symbolic colors representing different character traits from Chinese theater.",
-          "price_range_usd": "55-110"
+          "price_range_usd": "55-110",
+          "story": {
+            "headline": "Jingju Face Mask Opera — A treasure from the heart of Beijing.",
+            "origin": "In the historic districts of Beijing, local makers have been refining their craft for generations. This jingju face mask opera is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Beijing. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Temple of Heaven Cloisonné Enamel",
           "description": "Fine Chinese cloisonné enamel vessel with traditional imperial dragon patterns, crafted using ancient techniques.",
-          "price_range_usd": "120-250"
+          "price_range_usd": "120-250",
+          "story": {
+            "headline": "Temple of Heaven Cloisonné Enamel — A treasure from the heart of Beijing.",
+            "origin": "In the historic districts of Beijing, local makers have been refining their craft for generations. This temple of heaven cloisonné enamel is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Beijing. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Peking Opera Singing Set",
           "description": "A complete beginner's set for Peking opera singing including handmade erhu, traditional costume fabric, and instructional DVD.",
-          "price_range_usd": "85-160"
+          "price_range_usd": "85-160",
+          "story": {
+            "headline": "Peking Opera Singing Set — A treasure from the heart of Beijing.",
+            "origin": "In the historic districts of Beijing, local makers have been refining their craft for generations. This peking opera singing set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Beijing. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Ming Dynasty Style Porcelain Tea Set",
           "description": "Authentic replica of Ming Dynasty imperial porcelain with cobalt blue patterns, featuring teapot and six cups in a wooden box.",
-          "price_range_usd": "150-350"
+          "price_range_usd": "150-350",
+          "story": {
+            "headline": "Ming Dynasty Style Porcelain Tea Set — A treasure from the heart of Beijing.",
+            "origin": "In the historic districts of Beijing, local makers have been refining their craft for generations. This ming dynasty style porcelain tea set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Beijing. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Where emperors once walked.",
+      "origin_story": "Beijing is the heart of five millennia of Chinese civilization. Its gifts are steeped in imperial tradition: silk scrolls painted in the style of Ming masters, opera masks whose colors tell stories of heroism and betrayal, tea leaves harvested from mountains where monks have cultivated them for centuries. A gift from Beijing carries the wisdom of dynasties.",
+      "active": false
     },
     {
       "city": "Shanghai",
@@ -224,29 +455,62 @@
         {
           "name": "The Bund Art Deco Lamp",
           "description": "A vintage-style Art Deco table lamp inspired by 1930s Shanghai architecture, with brass base and stained glass shade.",
-          "price_range_usd": "95-180"
+          "price_range_usd": "95-180",
+          "story": {
+            "headline": "The Bund Art Deco Lamp — A treasure from the heart of Shanghai.",
+            "origin": "In the historic districts of Shanghai, local makers have been refining their craft for generations. This the bund art deco lamp is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Shanghai. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Shanghai Tong Lor Spa Set",
           "description": "Traditional Chinese aromatherapy spa set including foot bath herbs, jade roller, and silk eye pillow from local artisans.",
-          "price_range_usd": "65-120"
+          "price_range_usd": "65-120",
+          "story": {
+            "headline": "Shanghai Tong Lor Spa Set — A treasure from the heart of Shanghai.",
+            "origin": "In the historic districts of Shanghai, local makers have been refining their craft for generations. This shanghai tong lor spa set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Shanghai. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Nanhai Embroidery Panel",
           "description": "Fine Suzhou-style silk embroidery featuring traditional Chinese landscape scenes, hand-stitched by master embroiderers.",
-          "price_range_usd": "130-300"
+          "price_range_usd": "130-300",
+          "story": {
+            "headline": "Nanhai Embroidery Panel — A treasure from the heart of Shanghai.",
+            "origin": "In the historic districts of Shanghai, local makers have been refining their craft for generations. This nanhai embroidery panel is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Shanghai. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "French Concession Wine Selection",
           "description": "A curated selection of Chinese and French wines from Shanghai's former French Concession, presented in a silk-lined box.",
-          "price_range_usd": "100-220"
+          "price_range_usd": "100-220",
+          "story": {
+            "headline": "French Concession Wine Selection — A treasure from the heart of Shanghai.",
+            "origin": "In the historic districts of Shanghai, local makers have been refining their craft for generations. This french concession wine selection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Shanghai. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Old Shanghai Jazz Record Collection",
           "description": "Vintage jazz recordings from Shanghai's 1930s era featuring the jazz age of old Shanghai with original album artwork.",
-          "price_range_usd": "55-95"
+          "price_range_usd": "55-95",
+          "story": {
+            "headline": "Old Shanghai Jazz Record Collection — A treasure from the heart of Shanghai.",
+            "origin": "In the historic districts of Shanghai, local makers have been refining their craft for generations. This old shanghai jazz record collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Shanghai. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The Pearl of the Orient, reimagined.",
+      "origin_story": "Shanghai is China's window to the world — a city of neon and tradition, of Bund architecture and futuristic skylines. Here, ancient silk embroidery meets modern design. Dragon's Well tea shares shelf space with avant-garde art. Shanghai gifts are for those who love the dance between old and new.",
+      "active": false
     },
     {
       "city": "Hong Kong",
@@ -255,29 +519,62 @@
         {
           "name": "Victoria Harbour Diamond Model",
           "description": "A precision-crafted 24k gold-plated scale model of the Hong Kong skyline with working LED lights simulating Victoria Harbour.",
-          "price_range_usd": "180-350"
+          "price_range_usd": "180-350",
+          "story": {
+            "headline": "Victoria Harbour Diamond Model — A treasure from the heart of Hong Kong.",
+            "origin": "In the historic districts of Hong Kong, local makers have been refining their craft for generations. This victoria harbour diamond model is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Hong Kong. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Dim Sum Cooking Kit",
           "description": "Premium dim sum making kit including bamboo steamers, quality wrappers, and authentic ingredients with recipes from Michelin-starred chefs.",
-          "price_range_usd": "75-130"
+          "price_range_usd": "75-130",
+          "story": {
+            "headline": "Dim Sum Cooking Kit — A treasure from the heart of Hong Kong.",
+            "origin": "In the historic districts of Hong Kong, local makers have been refining their craft for generations. This dim sum cooking kit is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Hong Kong. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Silk Phoenix Embroidery",
           "description": "Hand-embroidered silk tapestry featuring the mythical Chinese phoenix, a symbol of grace and prosperity, in traditional Cantonese style.",
-          "price_range_usd": "150-280"
+          "price_range_usd": "150-280",
+          "story": {
+            "headline": "Silk Phoenix Embroidery — A treasure from the heart of Hong Kong.",
+            "origin": "In the historic districts of Hong Kong, local makers have been refining their craft for generations. This silk phoenix embroidery is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Hong Kong. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Wellington Building Crystal Paperweight",
           "description": "A lead crystal paperweight featuring an etched miniature of Hong Kong's iconic clock tower, handcrafted in Bohemia.",
-          "price_range_usd": "65-115"
+          "price_range_usd": "65-115",
+          "story": {
+            "headline": "Wellington Building Crystal Paperweight — A treasure from the heart of Hong Kong.",
+            "origin": "In the historic districts of Hong Kong, local makers have been refining their craft for generations. This wellington building crystal paperweight is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Hong Kong. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Hong Kong Craft Beer Selection",
           "description": "A curated selection of Hong Kong craft beers including local IPAs and stouts from Hong Kong's emerging microbrewery scene.",
-          "price_range_usd": "50-90"
+          "price_range_usd": "50-90",
+          "story": {
+            "headline": "Hong Kong Craft Beer Selection — A treasure from the heart of Hong Kong.",
+            "origin": "In the historic districts of Hong Kong, local makers have been refining their craft for generations. This hong kong craft beer selection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Hong Kong. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Where the harbour lights meet the artisan's hand.",
+      "origin_story": "Hong Kong is a vertical masterpiece of glass, steel, and silk. It's a city of high-speed energy and quiet mountain temples. From the dim sum masters of Kowloon to the tailors of Central, every gift carries the precision of a global hub and the heritage of the Pearl River Delta.",
+      "active": false
     },
     {
       "city": "Los Angeles",
@@ -286,29 +583,62 @@
         {
           "name": "Hollywood Walk of Fame Star Keepsake",
           "description": "A handcrafted brass replica of an iconic Hollywood Walk of Fame star, custom-engraved with a name of your choice in the classic terrazzo design.",
-          "price_range_usd": "75-150"
+          "price_range_usd": "75-150",
+          "story": {
+            "headline": "Hollywood Walk of Fame Star Keepsake — A treasure from the heart of Los Angeles.",
+            "origin": "In the historic districts of Los Angeles, local makers have been refining their craft for generations. This hollywood walk of fame star keepsake is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Los Angeles. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Venice Beach Skateboard Art",
           "description": "A vintage 1980s skateboard deck transformed into wall art, hand-painted with Venice Beach murals and signed by local surf/skate artists.",
-          "price_range_usd": "90-180"
+          "price_range_usd": "90-180",
+          "story": {
+            "headline": "Venice Beach Skateboard Art — A treasure from the heart of Los Angeles.",
+            "origin": "In the historic districts of Los Angeles, local makers have been refining their craft for generations. This venice beach skateboard art is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Los Angeles. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "In-N-Out Burger Gift Bundle",
           "description": "An authentic In-N-Out gift pack featuring branded merchandise including a baseball cap, t-shirt, and secret menu cookbook.",
-          "price_range_usd": "55-85"
+          "price_range_usd": "55-85",
+          "story": {
+            "headline": "In-N-Out Burger Gift Bundle — A treasure from the heart of Los Angeles.",
+            "origin": "In the historic districts of Los Angeles, local makers have been refining their craft for generations. This in-n-out burger gift bundle is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Los Angeles. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Malibu Wine Country Photo Frame",
           "description": "A panoramic walnut wood photo frame featuring a professionally matted image of Malibu vineyards at golden hour, with空间中认证本地酿酒师签名.",
-          "price_range_usd": "65-110"
+          "price_range_usd": "65-110",
+          "story": {
+            "headline": "Malibu Wine Country Photo Frame — A treasure from the heart of Los Angeles.",
+            "origin": "In the historic districts of Los Angeles, local makers have been refining their craft for generations. This malibu wine country photo frame is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Los Angeles. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Los Angeles Skyline Lighted Art",
           "description": "A laser-cut acrylic art piece of the LA skyline with warm white LED lights, designed by local artists in the Arts District.",
-          "price_range_usd": "95-175"
+          "price_range_usd": "95-175",
+          "story": {
+            "headline": "Los Angeles Skyline Lighted Art — A treasure from the heart of Los Angeles.",
+            "origin": "In the historic districts of Los Angeles, local makers have been refining their craft for generations. This los angeles skyline lighted art is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Los Angeles. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Where dreams are written in golden light.",
+      "origin_story": "Los Angeles is a sun-soaked canvas of reinvention. Between the palms and the Pacific, you'll find artisans shaping Hollywood glamour and Venice Beach soul into objects you can hold. These gifts carry the warmth of California optimism — a little bit of that golden hour magic.",
+      "active": false
     },
     {
       "city": "Chicago",
@@ -317,29 +647,62 @@
         {
           "name": "Willis Tower Glass Block Set",
           "description": "A set of three hand-etched glass blocks featuring the Willis Tower (Sears Tower) skyline, with internal LED lighting.",
-          "price_range_usd": "85-140"
+          "price_range_usd": "85-140",
+          "story": {
+            "headline": "Willis Tower Glass Block Set — A treasure from the heart of Chicago.",
+            "origin": "In the historic districts of Chicago, local makers have been refining their craft for generations. This willis tower glass block set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chicago. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Chicago Deep Dish Pizza Kit",
           "description": "An authentic Chicago deep dish pizza making kit from Lou Malnati's, includes dough, sauce, and Wisconsin brick cheese with instructions.",
-          "price_range_usd": "60-95"
+          "price_range_usd": "60-95",
+          "story": {
+            "headline": "Chicago Deep Dish Pizza Kit — A treasure from the heart of Chicago.",
+            "origin": "In the historic districts of Chicago, local makers have been refining their craft for generations. This chicago deep dish pizza kit is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chicago. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Wrigley Field Bleachers Blanket",
           "description": "A vintage-style woven wool blanket featuring the Wrigley Field scoreboard and bleachers, made by Chicago textile artisans.",
-          "price_range_usd": "75-130"
+          "price_range_usd": "75-130",
+          "story": {
+            "headline": "Wrigley Field Bleachers Blanket — A treasure from the heart of Chicago.",
+            "origin": "In the historic districts of Chicago, local makers have been refining their craft for generations. This wrigley field bleachers blanket is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chicago. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Chicago Architecture River Cruise Voucher",
           "description": "A gift voucher for a narrated architectural boat tour on the Chicago River, showcasing world-renowned skyscrapers and landmark buildings.",
-          "price_range_usd": "55-85"
+          "price_range_usd": "55-85",
+          "story": {
+            "headline": "Chicago Architecture River Cruise Voucher — A treasure from the heart of Chicago.",
+            "origin": "In the historic districts of Chicago, local makers have been refining their craft for generations. This chicago architecture river cruise voucher is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chicago. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Chicago Blues Archive Vinyl Collection",
           "description": "A curated collection of classic Chicago blues vinyl records from Chess Records, featuring Muddy Waters, Howlin' Wolf, and Buddy Guy.",
-          "price_range_usd": "90-160"
+          "price_range_usd": "90-160",
+          "story": {
+            "headline": "Chicago Blues Archive Vinyl Collection — A treasure from the heart of Chicago.",
+            "origin": "In the historic districts of Chicago, local makers have been refining their craft for generations. This chicago blues archive vinyl collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chicago. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The city of big shoulders and even bigger heart.",
+      "origin_story": "Chicago is the architecture of the prairies meeting the energy of the Great Lakes. Frank Lloyd Wright's geometry runs through its streets, deep-dish pizza warms its winters, and the blues pour out of clubs on the South Side. Every gift from Chicago has soul, substance, and a story worth telling.",
+      "active": false
     },
     {
       "city": "Berlin",
@@ -348,29 +711,62 @@
         {
           "name": "Berlin Wall Concrete Fragment",
           "description": "An authenticated piece of the Berlin Wall with original paint and graffiti, comes with certificate of authenticity and display stand.",
-          "price_range_usd": "120-280"
+          "price_range_usd": "120-280",
+          "story": {
+            "headline": "Berlin Wall Concrete Fragment — A treasure from the heart of Berlin.",
+            "origin": "In the historic districts of Berlin, local makers have been refining their craft for generations. This berlin wall concrete fragment is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Berlin. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Brandenburg Gate Crystal Model",
           "description": "A hand-crafted lead crystal miniature of the Brandenburg Gate with gold-plated details, presented in a velvet-lined gift box.",
-          "price_range_usd": "95-180"
+          "price_range_usd": "95-180",
+          "story": {
+            "headline": "Brandenburg Gate Crystal Model — A treasure from the heart of Berlin.",
+            "origin": "In the historic districts of Berlin, local makers have been refining their craft for generations. This brandenburg gate crystal model is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Berlin. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Berlin Philharmonic Concert Voucher",
           "description": "A gift voucher for two seats at a Berlin Philharmonic concert, one of the world's finest orchestras performing in the iconic philharmonic hall.",
-          "price_range_usd": "150-350"
+          "price_range_usd": "150-350",
+          "story": {
+            "headline": "Berlin Philharmonic Concert Voucher — A treasure from the heart of Berlin.",
+            "origin": "In the historic districts of Berlin, local makers have been refining their craft for generations. This berlin philharmonic concert voucher is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Berlin. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Bauhaus Design Desk Accessory Set",
           "description": "A minimalist desk accessory set in authentic Bauhaus style including pen holder, paper tray, and letter opener, designed in 1920s style.",
-          "price_range_usd": "85-150"
+          "price_range_usd": "85-150",
+          "story": {
+            "headline": "Bauhaus Design Desk Accessory Set — A treasure from the heart of Berlin.",
+            "origin": "In the historic districts of Berlin, local makers have been refining their craft for generations. This bauhaus design desk accessory set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Berlin. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Berlin Currywurst Spice Kit",
           "description": "An authentic Currywurst spice kit from a legendary Berlin Imbiss, including the secret curry powder and tomato chili sauce recipe.",
-          "price_range_usd": "35-55"
+          "price_range_usd": "35-55",
+          "story": {
+            "headline": "Berlin Currywurst Spice Kit — A treasure from the heart of Berlin.",
+            "origin": "In the historic districts of Berlin, local makers have been refining their craft for generations. This berlin currywurst spice kit is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Berlin. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Resilience, reinvented.",
+      "origin_story": "Berlin is a city that has been broken and rebuilt, again and again. A fragment of the Wall carries the weight of history. A Bauhaus desk set holds the precision of Germany's most influential design movement. The Berlin Philharmonic's music tells the story of a city that chose art over division. These are gifts from a city that knows what matters.",
+      "active": false
     },
     {
       "city": "Barcelona",
@@ -379,29 +775,62 @@
         {
           "name": "Gaudi Mosaic Lizard Sculpture",
           "description": "A handcrafted ceramic lizard covered in traditional Catalan trencadís mosaic work, inspired by Gaudi's Park Güell designs.",
-          "price_range_usd": "90-175"
+          "price_range_usd": "90-175",
+          "story": {
+            "headline": "Gaudi Mosaic Lizard Sculpture — A treasure from the heart of Barcelona.",
+            "origin": "In the historic districts of Barcelona, local makers have been refining their craft for generations. This gaudi mosaic lizard sculpture is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Barcelona. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Barcelona Flamenco Dance Experience",
           "description": "A gift package including tickets to an intimate flamenco show in the Gothic Quarter with pre-show tapas and a champagne reception.",
-          "price_range_usd": "130-250"
+          "price_range_usd": "130-250",
+          "story": {
+            "headline": "Barcelona Flamenco Dance Experience — A treasure from the heart of Barcelona.",
+            "origin": "In the historic districts of Barcelona, local makers have been refining their craft for generations. This barcelona flamenco dance experience is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Barcelona. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Santos Cantarera Nougat Selection",
           "description": "A premium selection of artisanal Catalan nougat from the legendary Santos bakery, including saffron and almond varieties.",
-          "price_range_usd": "45-80"
+          "price_range_usd": "45-80",
+          "story": {
+            "headline": "Santos Cantarera Nougat Selection — A treasure from the heart of Barcelona.",
+            "origin": "In the historic districts of Barcelona, local makers have been refining their craft for generations. This santos cantarera nougat selection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Barcelona. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Sagrada Familia Stained Glass Art",
           "description": "A handcrafted stained glass panel featuring the intricate facade of the Sagrada Familia, made by local artisans in Barcelona.",
-          "price_range_usd": "150-300"
+          "price_range_usd": "150-300",
+          "story": {
+            "headline": "Sagrada Familia Stained Glass Art — A treasure from the heart of Barcelona.",
+            "origin": "In the historic districts of Barcelona, local makers have been refining their craft for generations. This sagrada familia stained glass art is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Barcelona. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Catalan Wine and Cheese Gift Set",
           "description": "A selection of Priorat and Penedès wines paired with authentic Manchego cheese and Catalan crackers, presented in a handwoven basket.",
-          "price_range_usd": "85-160"
+          "price_range_usd": "85-160",
+          "story": {
+            "headline": "Catalan Wine and Cheese Gift Set — A treasure from the heart of Barcelona.",
+            "origin": "In the historic districts of Barcelona, local makers have been refining their craft for generations. This catalan wine and cheese gift set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Barcelona. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Where Gaudí painted with stone.",
+      "origin_story": "Barcelona is the Mediterranean dreaming out loud. From the whimsical mosaics of Park Güell to the passion of flamenco, this city celebrates color, movement, and life. A piece of Sagrada Familia stained glass, a hand-painted Gaudi-inspired lizard, or the rich sweetness of Catalan nougat — each gift carries the warmth of the Spanish sun.",
+      "active": false
     },
     {
       "city": "Guangzhou",
@@ -410,29 +839,62 @@
         {
           "name": "Cantonese Porcelain Tea Set",
           "description": "A hand-painted porcelain tea set featuring traditional Cantonese motifs with cobalt blue on white, includes teapot and six cups.",
-          "price_range_usd": "120-220"
+          "price_range_usd": "120-220",
+          "story": {
+            "headline": "Cantonese Porcelain Tea Set — A treasure from the heart of Guangzhou.",
+            "origin": "In the historic districts of Guangzhou, local makers have been refining their craft for generations. This cantonese porcelain tea set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Guangzhou. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Cantonese Silk Embroidery Panel",
           "description": "Fine silk embroidery featuring traditional Cantonese floral patterns with gold thread accents, created by master embroiderers in Guangzhou.",
-          "price_range_usd": "150-320"
+          "price_range_usd": "150-320",
+          "story": {
+            "headline": "Cantonese Silk Embroidery Panel — A treasure from the heart of Guangzhou.",
+            "origin": "In the historic districts of Guangzhou, local makers have been refining their craft for generations. This cantonese silk embroidery panel is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Guangzhou. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Canton Tower Miniature Model",
           "description": "A precision-crafted metallic miniature of the Canton Tower (CTU) withetched architectural details and a display base.",
-          "price_range_usd": "65-110"
+          "price_range_usd": "65-110",
+          "story": {
+            "headline": "Canton Tower Miniature Model — A treasure from the heart of Guangzhou.",
+            "origin": "In the historic districts of Guangzhou, local makers have been refining their craft for generations. This canton tower miniature model is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Guangzhou. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "White Lotus Tea Collection",
           "description": "A premium collection of ancient white tea from the White Lotus Garden, pressed into traditional lotus-shaped cakes.",
-          "price_range_usd": "85-160"
+          "price_range_usd": "85-160",
+          "story": {
+            "headline": "White Lotus Tea Collection — A treasure from the heart of Guangzhou.",
+            "origin": "In the historic districts of Guangzhou, local makers have been refining their craft for generations. This white lotus tea collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Guangzhou. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Guangdong Lion Dance Mask",
           "description": "A traditional Cantonese lion dance mask hand-painted with symbolic colors, used in the famous Guangdong lion dance performances.",
-          "price_range_usd": "55-100"
+          "price_range_usd": "55-100",
+          "story": {
+            "headline": "Guangdong Lion Dance Mask — A treasure from the heart of Guangzhou.",
+            "origin": "In the historic districts of Guangzhou, local makers have been refining their craft for generations. This guangdong lion dance mask is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Guangzhou. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "The city of flowers and flavor.",
+      "origin_story": "For 2,000 years, Guangzhou has been China's gateway to the world — the starting point of the Maritime Silk Road. Its porcelain carries patterns that once adorned the tables of European kings. Its silk tells stories of trade and exchange. A gift from Guangzhou is a piece of global history, born in China.",
+      "active": false
     },
     {
       "city": "Chengdu",
@@ -441,29 +903,126 @@
         {
           "name": "Giant Panda plush Companion",
           "description": "An ultra-soft plush giant panda from the Chengdu Panda Base, made with sustainable bamboo fibers and comes with adoption certificate.",
-          "price_range_usd": "75-140"
+          "price_range_usd": "75-140",
+          "story": {
+            "headline": "Giant Panda plush Companion — A treasure from the heart of Chengdu.",
+            "origin": "In the historic districts of Chengdu, local makers have been refining their craft for generations. This giant panda plush companion is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chengdu. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Sichuan Opera Face Changing Set",
           "description": "A complete Sichuan opera face-changing kit including traditional costume pieces, fans, and instructional DVD on the ancient art.",
-          "price_range_usd": "90-180"
+          "price_range_usd": "90-180",
+          "story": {
+            "headline": "Sichuan Opera Face Changing Set — A treasure from the heart of Chengdu.",
+            "origin": "In the historic districts of Chengdu, local makers have been refining their craft for generations. This sichuan opera face changing set is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chengdu. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Bamboo Tea Set from Chengdu",
           "description": "An artisanal tea set carved from local Sichuan bamboo, includes gaiwan, teapot, and six cups with hand-carved bamboo tray.",
-          "price_range_usd": "95-170"
+          "price_range_usd": "95-170",
+          "story": {
+            "headline": "Bamboo Tea Set from Chengdu — A treasure from the heart of Chengdu.",
+            "origin": "In the historic districts of Chengdu, local makers have been refining their craft for generations. This bamboo tea set from chengdu is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chengdu. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Sichuan Peppercorn Spice Collection",
           "description": "A premium collection of Sichuan spices including the famous ma xiang la jiao peppercorns, ready-to-use mala seasoning, and Sichuan peppercorn oil.",
-          "price_range_usd": "45-85"
+          "price_range_usd": "45-85",
+          "story": {
+            "headline": "Sichuan Peppercorn Spice Collection — A treasure from the heart of Chengdu.",
+            "origin": "In the historic districts of Chengdu, local makers have been refining their craft for generations. This sichuan peppercorn spice collection is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chengdu. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         },
         {
           "name": "Du Fu Thatched Cottage Replica",
           "description": "A miniature handcrafted wooden model of the Du Fu Thatched Cottage, the famous poet's former residence in Chengdu, with hand-painted details.",
-          "price_range_usd": "80-150"
+          "price_range_usd": "80-150",
+          "story": {
+            "headline": "Du Fu Thatched Cottage Replica — A treasure from the heart of Chengdu.",
+            "origin": "In the historic districts of Chengdu, local makers have been refining their craft for generations. This du fu thatched cottage replica is created using traditional methods that have been passed down through the years.",
+            "detail": "Every piece is unique, reflecting the specific heritage and materials of Chengdu. It carries the unmistakable marks of authentic hand-craftsmanship.",
+            "gift": "Give this to someone who appreciates the story behind the object and the soul of the city it represents."
+          }
         }
-      ]
+      ],
+      "tagline": "Where pandas play and spices dance.",
+      "origin_story": "Chengdu is the city that slows you down. Home to giant pandas, the fiery magic of Sichuan peppercorns, and the meditative art of bamboo tea ceremonies. A gift from Chengdu is an invitation to breathe, to savor, to experience life at a more human pace — with just a little bit of heat.",
+      "active": false
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "tagline": "Precision meets poetry.",
+      "origin_story": "Tokyo is a city where every detail matters. From the quiet workshops of Shibuya to the tea fields of Uji, artisans spend lifetimes perfecting a single craft. These gifts are lessons in intention — the art of doing one thing perfectly. Whether it's a blade folded a thousand times or tea ground by hand for decades, every item carries the soul of Japanese mastery.",
+      "gifts": [
+        {
+          "name": "Hand-Forged Shibuya Chef Knife",
+          "description": "A professional-grade Japanese chef knife forged from high-carbon steel, folded 1,000 times by master smiths in Shibuya.",
+          "price_range_usd": "250-600",
+          "story": {
+            "headline": "Shibuya Chef Knife — 1,000 folds of perfection.",
+            "origin": "In a quiet workshop in Shibuya, master knife makers forge steel that has been folded 1,000 times using techniques passed down through 800 years of tradition.",
+            "detail": "Each hammer strike aligns the grain, creating a blade so sharp it can slice a tomato thin enough to read through. The unique pattern on the blade is the signature of the master's hand.",
+            "gift": "Give this to the chef who views cooking as an art and demands the world's finest tools."
+          }
+        },
+        {
+          "name": "Uji Stone-Ground Matcha Set",
+          "description": "Premium ceremonial grade matcha from Uji, including a hand-carved bamboo whisk and a stone-fired ceramic bowl.",
+          "price_range_usd": "85-180",
+          "story": {
+            "headline": "Uji Matcha Set — Forty years in the making.",
+            "origin": "In Uji, the birthplace of Japanese tea, masters grind shade-grown leaves using stone mills that turn at exactly 60 rotations per minute to prevent burning.",
+            "detail": "Look for the deep emerald hue — a result of 20 days of shade-growth before harvest, which maximizes chlorophyll and amino acids for a profound depth of flavor.",
+            "gift": "Give this to someone who appreciates the meditative ritual of the tea ceremony."
+          }
+        },
+        {
+          "name": "Edo Kiriko Cut Glass Vase",
+          "description": "Exquisite hand-cut crystal glassware featuring traditional Edo-period geometric patterns, crafted in the Sumida district.",
+          "price_range_usd": "150-350",
+          "story": {
+            "headline": "Edo Kiriko Vase — Light captured in crystal.",
+            "origin": "Created in the Sumida district of Tokyo, Edo Kiriko is the art of hand-cutting intricate patterns into multi-layered colored glass.",
+            "detail": "The 'nanako' (fish egg) pattern reflects light in a way that mimics the shimmering waters of the Sumida River at sunset.",
+            "gift": "Give this to a lover of fine glasswork and the historic elegance of old Tokyo."
+          }
+        },
+        {
+          "name": "Nihonbashi Washi Stationery Box",
+          "description": "A collection of hand-made washi paper stationery, dyed with natural pigments and featuring seasonal Japanese motifs.",
+          "price_range_usd": "45-95",
+          "story": {
+            "headline": "Washi Stationery — The art of the written word.",
+            "origin": "Handcrafted in the Nihonbashi district by families who have been making paper since the Edo period, using fibers from the gampi tree.",
+            "detail": "Each sheet is individually dipped and dried on wooden boards, giving it a texture and strength that machine-made paper can never replicate.",
+            "gift": "Give this to the writer or artist who values the tactile beauty of traditional materials."
+          }
+        },
+        {
+          "name": "Shibuya Neon Desktop Lamp",
+          "description": "A minimalist desktop lamp inspired by the neon pulse of the Shibuya crossing, featuring hand-bent glass tubing.",
+          "price_range_usd": "120-220",
+          "story": {
+            "headline": "Shibuya Neon Lamp — The pulse of the city, captured.",
+            "origin": "Designed in the Harajuku Arts District, this lamp uses traditional neon glass-bending techniques to evoke the vibrant energy of Tokyo's nights.",
+            "detail": "The soft glow is achieved through a specific blend of noble gases, creating a warmth that mirrors the golden hour in the world's busiest intersection.",
+            "gift": "Give this to the urbanite who carries the energy of Tokyo in their soul."
+          }
+        }
+      ],
+      "active": true
     }
   ]
 }

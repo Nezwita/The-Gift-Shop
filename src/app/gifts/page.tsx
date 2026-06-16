@@ -38,6 +38,7 @@ export default function GiftsCatalogPage() {
       city.gifts.map(gift => ({
         ...gift,
         cityName: city.city,
+        cityActive: city.active,
         country: city.country,
         category: getCategory(gift.name),
         citySlug: slugify(city.city),
@@ -196,12 +197,17 @@ export default function GiftsCatalogPage() {
                       src={productImages[gift.name] || defaultProductImage}
                       alt={gift.name}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className={`object-cover transition-transform duration-500 group-hover:scale-110 ${!gift.cityActive ? 'grayscale opacity-70' : ''}`}
                     />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-midnight-blue/80 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 backdrop-blur-sm">
+                    <div className="absolute top-4 left-4 flex flex-col gap-2">
+                      <span className="bg-midnight-blue/80 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 backdrop-blur-sm w-fit">
                         {gift.cityName}
                       </span>
+                      {!gift.cityActive && (
+                        <span className="bg-champagne-gold text-midnight-blue text-[9px] font-bold uppercase tracking-widest px-2 py-1 backdrop-blur-sm w-fit">
+                          Coming Soon
+                        </span>
+                      )}
                     </div>
                   </div>
                   

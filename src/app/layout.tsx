@@ -14,8 +14,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "CuratedCities - Premium Global Gifts",
-  description: "Discover hand-curated, iconic treasures from the world's most vibrant metropolises.",
+  title: "CuratedCities - Luxury Global Gifts & Iconic Local Treasures",
+  description: "Experience the world's finest luxury gifts. Hand-curated, iconic treasures from vibrant metropolises like NYC, Paris, and Tokyo. Premium quality, global delivery.",
+  keywords: ["luxury gifts", "curated gifts", "authentic local treasures", "premium global shopping", "NYC luxury gifts", "Paris designer gifts", "gifts with stories", "artisanal global treasures"],
 };
 
 export default function RootLayout({
@@ -29,6 +30,8 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body bg-soft-ivory text-slate-black">
+        {/* Google Analytics Placeholder */}
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> */}
         <CartProvider>
           {children}
         </CartProvider>

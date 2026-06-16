@@ -10,6 +10,14 @@ import { useCart } from '@/lib/cart';
 export default function SuccessPage() {
   const { orderInfo } = useCart();
 
+  useEffect(() => {
+    // Conversion Tracking Placeholder
+    if (orderInfo) {
+      console.log('Order completed:', orderInfo.orderNumber, 'Total:', orderInfo.total);
+      // Example: window.gtag('event', 'purchase', { ... });
+    }
+  }, [orderInfo]);
+
   // If no order info is found, we might want to redirect or show a generic message
   // but for this task we'll just use dummy data if it's null to ensure the UI is visible.
   const displayOrder = orderInfo || {
@@ -84,7 +92,7 @@ export default function SuccessPage() {
       
       <footer className="bg-midnight-blue text-white py-8 text-center mt-12">
         <div className="text-xs text-warm-gray uppercase tracking-widest font-body">
-          &copy; 2023 CuratedCities. All rights reserved.
+          &copy; 2026 CuratedCities. All rights reserved.
         </div>
       </footer>
     </div>

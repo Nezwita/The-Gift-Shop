@@ -5,11 +5,37 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getCityBySlug, getProductBySlug, productImages, defaultProductImage } from '@/lib/data';
+import { Metadata } from 'next';
 
 import AddToCartButton from '@/components/AddToCartButton';
+import WaitlistForm from '@/components/WaitlistForm';
 
 interface Props {
   params: Promise<{ citySlug: string; productSlug: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { citySlug, productSlug } = await params;
+  const product = getProductBySlug(citySlug, productSlug);
+  const city = getCityBySlug(citySlug);
+
+  if (!product || !city) {
+    return {
+      title: 'Product Not Found',
+    };
+  }
+
+  return {
+    title: `${product.name} - Luxury ${city.city} Gift | CuratedCities`,
+    description: product.story 
+      ? `${product.story.headline} ${product.story.origin.substring(0, 100)}...`
+      : product.description || `Experience true luxury with the authentic ${product.name} from ${city.city}. A handpicked premium gift representing local heritage and superior quality.`,
+    openGraph: {
+      title: `${product.name} - Premium ${city.city} Luxury Gifts | CuratedCities`,
+      description: product.description,
+      images: [productImages[product.name] || defaultProductImage],
+    },
+  };
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -66,16 +92,37 @@ export default async function ProductPage({ params }: Props) {
                 </p>
               </div>
 
-              <AddToCartButton 
-                product={{ ...product, image: imageUrl }} 
-                city={{ city: city.city, slug: citySlug }} 
-              />
+              {city.active ? (
+                <AddToCartButton 
+                  product={{ ...product, image: imageUrl }} 
+                  city={{ city: city.city, slug: citySlug }} 
+                />
+              ) : (
+                <div className="bg-soft-ivory p-8 border border-slate-100">
+                  <p className="text-midnight-blue font-bold uppercase tracking-widest text-xs mb-4">Coming Soon</p>
+                  <p className="text-slate-600 mb-6 font-body">This item is currently being sourced. Join the waitlist for {city.city} to be notified when it's available.</p>
+                  <WaitlistForm city={city.city} />
+                </div>
+              )}
 
               <div className="mt-16 pt-10 border-t border-slate-100">
                 <h2 className="font-heading text-2xl mb-6">The Story</h2>
-                <p className="text-slate-600 leading-relaxed italic">
-                  {product.story || `This authentic treasure from ${city.city} captures the essence of local culture and traditional craftsmanship. Handpicked by our team of curators, it represents the finest quality and heritage of the region.`}
-                </p>
+                {product.story ? (
+                  <div className="space-y-8">
+                    <p className="text-xl font-body text-midnight-blue italic border-l-4 border-champagne-gold pl-6 py-2">
+                      {product.story.headline}
+                    </p>
+                    <div className="space-y-6 text-slate-600 leading-relaxed font-body">
+                      <p><span className="font-bold text-midnight-blue uppercase text-xs tracking-widest block mb-2">The Origin</span> {product.story.origin}</p>
+                      <p><span className="font-bold text-midnight-blue uppercase text-xs tracking-widest block mb-2">The Detail</span> {product.story.detail}</p>
+                      <p><span className="font-bold text-midnight-blue uppercase text-xs tracking-widest block mb-2">The Gift</span> {product.story.gift}</p>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-slate-600 leading-relaxed italic">
+                    {product.description}
+                  </p>
+                )}
                 
                 <h2 className="font-heading text-2xl mt-10 mb-6">Shipping Info</h2>
                 <p className="text-slate-600 leading-relaxed">
