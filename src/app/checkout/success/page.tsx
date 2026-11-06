@@ -51,6 +51,9 @@ export default function SuccessPage() {
           </div>
           
           <h1 className="font-heading text-5xl mb-4 text-midnight-blue">Thank You for Your Order</h1>
+          <p className="inline-block mb-6 bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-widest px-4 py-2">
+            Preview only — no payment was taken and no confirmation email was sent
+          </p>
           <p className="text-warm-gray text-lg mb-10 uppercase tracking-widest font-bold font-body">Order #{displayOrder.orderNumber}</p>
           
           <p className="text-xl text-slate-700 mb-12 font-body max-w-2xl mx-auto leading-relaxed">

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
@@ -8,123 +8,234 @@ import Footer from '@/components/Footer';
 import { useCart } from '@/lib/cart';
 
 export default function CartPage() {
-  const { cart, removeFromCart, updateQuantity, cartTotal } = useCart();
+  const { cart, removeFromCart, updateQuantity, cartTotal, cartCount, clearCart } = useCart();
+  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
+  const [checkoutNotice, setCheckoutNotice] = useState<string | null>(null);
+
+  const handleCheckout = async () => {
+    if (cart.length === 0) return;
+
+    setIsCheckingOut(true);
+    setCheckoutError(null);
+    setCheckoutNotice(null);
+
+    try {
+      const response = await fetch('/api/create-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: cart.map(item => ({
+            name: item.name,
+            city: item.city,
+            price: item.price,
+            quantity: item.quantity,
+            image: item.image,
+            variant: item.variant,
+          })),
+          successUrl: `${window.location.origin}/checkout/success`,
+          cancelUrl: `${window.location.origin}/cart`,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        // 503 / payments_not_live: Stripe is not connected yet (budget-gated launch).
+        if (data.code === 'payments_not_live' || response.status === 503) {
+          setCheckoutNotice(
+            data.error ||
+              'Payments are not live yet. Nothing has been charged.'
+          );
+          return;
+        }
+        throw new Error(data.error || 'Failed to create checkout');
+      }
+
+      // Stripe Checkout Session created — send the shopper to Stripe's hosted page.
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('Checkout is unavailable right now. Please try again.');
+      }
+    } catch (error: any) {
+      console.error('Checkout error:', error);
+      setCheckoutError(error.message || 'Something went wrong. Please try again.');
+    } finally {
+      setIsCheckingOut(false);
+    }
+  };
 
   return (
-    <div className="flex flex-col min-h-screen bg-soft-ivory">
+    <div className="flex flex-col min-h-screen">
       <Header />
       
-      <main className="flex-grow py-20 px-[5%] max-w-5xl mx-auto w-full">
-        <h1 className="font-heading text-5xl mb-12 text-center border-b-2 border-champagne-gold inline-table mx-auto pb-4 px-8">
-          Your Curations
-        </h1>
-        
+      <main className="flex-grow py-16 px-[5%] max-w-6xl mx-auto w-full">
+        <h1 className="font-heading text-4xl md:text-5xl text-midnight-blue mb-4">Your Cart</h1>
+        <p className="text-warm-gray mb-12 font-body uppercase tracking-widest text-sm">
+          {cartCount === 0 ? 'Your cart is empty' : `${cartCount} item${cartCount !== 1 ? 's' : ''} in your cart`}
+        </p>
+
         {cart.length === 0 ? (
-          <div className="bg-white p-16 text-center shadow-sm border border-slate-100 mt-12">
-            <p className="text-xl text-slate-500 mb-8 font-body">Your collection is currently empty.</p>
-            <Link href="/cities" className="inline-block bg-midnight-blue text-white py-4 px-12 font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors">
-              Explore Cities
+          <div className="text-center py-20 bg-white shadow-sm border border-slate-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-16 h-16 text-slate-300 mx-auto mb-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            <h2 className="font-heading text-2xl text-midnight-blue mb-4">Your cart is empty</h2>
+            <p className="text-slate-600 mb-8 font-body">Discover treasures from cities around the world.</p>
+            <Link 
+              href="/gifts"
+              className="inline-block bg-midnight-blue text-white py-4 px-10 font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors"
+            >
+              Explore Gifts
             </Link>
           </div>
         ) : (
-          <div className="mt-8">
-            <div className="bg-white shadow-lg overflow-hidden border border-slate-100">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="bg-midnight-blue text-white">
-                    <th className="px-8 py-6 font-medium uppercase tracking-widest text-sm">Product</th>
-                    <th className="px-8 py-6 font-medium uppercase tracking-widest text-sm text-center">Price</th>
-                    <th className="px-8 py-6 font-medium uppercase tracking-widest text-sm text-center">Quantity</th>
-                    <th className="px-8 py-6 font-medium uppercase tracking-widest text-sm text-right">Subtotal</th>
-                    <th className="px-8 py-6"></th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 font-body">
-                  {cart.map((item) => (
-                    <tr key={item.id}>
-                      <td className="px-8 py-8">
-                        <div className="flex items-center gap-6">
-                          <div className="relative w-24 h-24 bg-soft-ivory flex-shrink-0">
-                            <Image src={item.image} alt={item.name} fill className="object-cover" />
-                          </div>
-                          <div>
-                            <h3 className="font-heading text-xl text-midnight-blue mb-1">{item.name}</h3>
-                            <p className="text-sm text-warm-gray uppercase tracking-tight">{item.city}</p>
-                            {item.variant && (
-                              <p className="text-xs text-champagne-gold font-bold mt-2 uppercase tracking-widest">{item.variant}</p>
-                            )}
-                          </div>
-                        </div>
-                      </td>
-                      <td className="px-8 py-8 text-center font-bold">
-                        ${item.price.toFixed(2)}
-                      </td>
-                      <td className="px-8 py-8">
-                        <div className="flex items-center justify-center gap-4">
-                          <button 
-                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                            className="w-8 h-8 flex items-center justify-center border border-slate-200 hover:bg-slate-50 transition-colors"
-                          >
-                            -
-                          </button>
-                          <span className="w-8 text-center font-bold">{item.quantity}</span>
-                          <button 
-                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                            className="w-8 h-8 flex items-center justify-center border border-slate-200 hover:bg-slate-50 transition-colors"
-                          >
-                            +
-                          </button>
-                        </div>
-                      </td>
-                      <td className="px-8 py-8 text-right font-bold text-midnight-blue">
-                        ${(item.price * item.quantity).toFixed(2)}
-                      </td>
-                      <td className="px-8 py-8 text-right">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Cart Items */}
+            <div className="lg:col-span-2 space-y-6">
+              {cart.map((item) => (
+                <div key={item.id} className="bg-white p-6 shadow-sm border border-slate-100 flex gap-6">
+                  <div className="w-24 h-24 bg-soft-ivory flex-shrink-0 overflow-hidden">
+                    <Image 
+                      src={item.image} 
+                      alt={item.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  <div className="flex-grow">
+                    <h3 className="font-heading text-lg text-midnight-blue mb-1">{item.name}</h3>
+                    <p className="text-xs text-warm-gray uppercase tracking-widest mb-2">{item.city}</p>
+                    {item.variant && (
+                      <p className="text-sm text-slate-500 mb-3">{item.variant}</p>
+                    )}
+                    
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center border border-slate-200">
                         <button 
-                          onClick={() => removeFromCart(item.id)}
-                          className="text-red-600 hover:text-red-800 transition-colors uppercase text-xs font-bold tracking-widest"
+                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                          className="px-3 py-1 text-slate-600 hover:bg-slate-50 transition-colors"
                         >
-                          Remove
+                          −
                         </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                        <span className="px-4 py-1 text-sm font-medium border-x border-slate-200">
+                          {item.quantity}
+                        </span>
+                        <button 
+                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                          className="px-3 py-1 text-slate-600 hover:bg-slate-50 transition-colors"
+                        >
+                          +
+                        </button>
+                      </div>
+                      
+                      <button 
+                        onClick={() => removeFromCart(item.id)}
+                        className="text-sm text-red-400 hover:text-red-600 transition-colors uppercase tracking-widest"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <div className="text-right flex-shrink-0">
+                    <p className="font-heading text-xl text-midnight-blue">${(item.price * item.quantity).toFixed(2)}</p>
+                    {item.quantity > 1 && (
+                      <p className="text-xs text-slate-400 mt-1">${item.price.toFixed(2)} each</p>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
 
-            <div className="mt-12 flex justify-end">
-              <div className="w-full max-w-sm bg-white p-10 shadow-lg border border-slate-100">
-                <div className="space-y-4 mb-8 font-body">
-                  <div className="flex justify-between">
-                    <span className="text-warm-gray uppercase tracking-widest text-sm">Subtotal</span>
-                    <span className="font-bold">${cartTotal.toFixed(2)}</span>
+            {/* Order Summary */}
+            <div className="lg:col-span-1">
+              <div className="bg-white p-8 shadow-sm border border-slate-100 sticky top-28">
+                <h2 className="font-heading text-xl text-midnight-blue mb-6 pb-4 border-b border-slate-100">
+                  Order Summary
+                </h2>
+                
+                <div className="space-y-3 mb-6 text-sm">
+                  <div className="flex justify-between text-slate-600">
+                    <span>Subtotal ({cartCount} items)</span>
+                    <span className="text-midnight-blue font-medium">${cartTotal.toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between border-b border-slate-100 pb-4">
-                    <span className="text-warm-gray uppercase tracking-widest text-sm">Shipping</span>
-                    <span className="text-champagne-gold font-bold text-xs uppercase tracking-widest">Calculated at checkout</span>
+                  <div className="flex justify-between text-slate-600">
+                    <span>Shipping</span>
+                    <span className="text-slate-400">Calculated at checkout</span>
                   </div>
-                  <div className="flex justify-between text-2xl font-bold text-midnight-blue pt-4">
-                    <span className="font-heading">Total</span>
+                  <div className="flex justify-between text-slate-600">
+                    <span>Tax</span>
+                    <span className="text-slate-400">Calculated at checkout</span>
+                  </div>
+                </div>
+
+                <div className="border-t border-slate-100 pt-4 mb-8">
+                  <div className="flex justify-between text-lg font-heading text-midnight-blue">
+                    <span>Estimated Total</span>
                     <span>${cartTotal.toFixed(2)}</span>
                   </div>
                 </div>
-                
-                <Link 
-                  href="/checkout" 
-                  className="block w-full bg-midnight-blue text-white py-5 px-8 text-center font-bold uppercase tracking-[0.2em] hover:bg-slate-800 transition-colors"
+
+                {checkoutNotice && (
+                  <div className="bg-amber-50 text-amber-800 p-4 text-sm mb-4 border border-amber-200">
+                    <p className="font-bold uppercase tracking-widest text-xs mb-2">
+                      Payments are not live yet
+                    </p>
+                    <p>{checkoutNotice}</p>
+                  </div>
+                )}
+
+                {checkoutError && (
+                  <div className="bg-red-50 text-red-600 p-4 text-sm mb-4 border border-red-100">
+                    {checkoutError}
+                  </div>
+                )}
+
+                <button
+                  onClick={handleCheckout}
+                  disabled={isCheckingOut || cart.length === 0}
+                  className="w-full bg-midnight-blue text-white py-5 font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
                 >
-                  Proceed to Checkout
-                </Link>
-                <Link href="/cities" className="block text-center mt-6 text-sm text-warm-gray hover:text-midnight-blue transition-colors uppercase tracking-widest">
-                  Continue Shopping
-                </Link>
+                  {isCheckingOut ? (
+                    <span className="flex items-center justify-center gap-3">
+                      <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                      </svg>
+                      Processing...
+                    </span>
+                  ) : (
+                    'Checkout with Stripe'
+                  )}
+                </button>
+
+                <div className="mt-6 space-y-3">
+                  <p className="text-xs text-slate-400 text-center">
+                    Secure checkout powered by Stripe. Your payment information is encrypted.
+                  </p>
+                  <Link 
+                    href="/gifts"
+                    className="block text-center text-sm text-champagne-gold hover:text-midnight-blue transition-colors uppercase tracking-widest"
+                  >
+                    Continue Shopping
+                  </Link>
+                  <button
+                    onClick={clearCart}
+                    className="block w-full text-center text-xs text-slate-400 hover:text-red-400 transition-colors uppercase tracking-widest mt-4"
+                  >
+                    Clear Cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         )}
       </main>
-      
+
       <Footer />
     </div>
   );
