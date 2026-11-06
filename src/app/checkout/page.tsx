@@ -75,11 +75,25 @@ export default function CheckoutPage() {
     router.push('/checkout/success');
   };
 
+  const paymentsNotice = (
+    <div className="mb-10 bg-amber-50 border border-amber-200 p-6 text-amber-900">
+      <p className="font-bold uppercase tracking-widest text-xs mb-2">Payments are not live yet</p>
+      <p className="font-body text-sm leading-relaxed">
+        Our secure payment provider is not connected yet, so this checkout is a preview of the
+        ordering experience. Nothing is charged and no order is placed. Every item you see is part
+        of our curated launch catalog, ready to ship once payments go live.
+      </p>
+    </div>
+  );
+
   if (cart.length === 0) {
     return (
       <div className="flex flex-col min-h-screen bg-soft-ivory">
         <Header />
-        <main className="flex-grow flex items-center justify-center py-20 px-[5%]">
+        <main className="flex-grow flex flex-col items-center justify-center py-20 px-[5%]">
+          <div className="w-full max-w-lg">
+            {paymentsNotice}
+          </div>
           <div className="bg-white p-16 text-center shadow-lg border border-slate-100 max-w-lg w-full">
             <h1 className="font-heading text-4xl mb-6 text-midnight-blue">Checkout</h1>
             <p className="text-xl text-slate-500 mb-8 font-body">Your cart is empty.</p>
@@ -103,6 +117,8 @@ export default function CheckoutPage() {
       </header>
       
       <main className="flex-grow py-12 px-[5%] max-w-7xl mx-auto w-full">
+        {paymentsNotice}
+
         <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-7 space-y-8">
             <section className="bg-white p-10 shadow-lg border border-slate-100">
@@ -308,7 +324,7 @@ export default function CheckoutPage() {
                 type="submit"
                 className="w-full bg-midnight-blue text-white py-5 px-8 font-bold uppercase tracking-[0.2em] mt-10 hover:bg-slate-800 transition-colors shadow-xl"
               >
-                Complete Purchase
+                Preview Checkout — No Payment Taken
               </button>
               
               <Link href="/cart" className="block text-center mt-6 text-sm text-warm-gray hover:text-midnight-blue transition-colors uppercase tracking-widest font-bold">

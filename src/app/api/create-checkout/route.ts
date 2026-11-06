@@ -1,11 +1,25 @@
 import { NextResponse } from 'next/server';
-import { stripe, formatAmountForStripe } from '@/lib/stripe';
+import { getStripe, formatAmountForStripe } from '@/lib/stripe';
+
+const PAYMENTS_NOT_LIVE_MESSAGE =
+  'Payments are not live yet. CuratedCities checkout will open as soon as our payment provider is connected — nothing has been charged.';
 
 export async function POST(request: Request) {
   try {
+    const stripe = getStripe();
+
+    // Budget-gated launch: no Stripe credentials configured yet.
+    // Return a clear, friendly state instead of a 500.
+    if (!stripe) {
+      return NextResponse.json(
+        { error: PAYMENTS_NOT_LIVE_MESSAGE, code: 'payments_not_live' },
+        { status: 503 }
+      );
+    }
+
     const { items, successUrl, cancelUrl } = await request.json();
 
-    if (!items || items.length === 0) {
+    if (!Array.isArray(items) || items.length === 0) {
       return NextResponse.json({ error: 'No items provided' }, { status: 400 });
     }
 
@@ -14,11 +28,11 @@ export async function POST(request: Request) {
       price_data: {
         currency: 'usd',
         product_data: {
-          name: item.name,
+          name: String(item.name ?? 'CuratedCities Gift'),
           description: `From ${item.city}${item.variant ? ` — ${item.variant}` : ''}`,
-          images: item.image ? [item.image] : [],
+          images: item.image && /^https?:\/\//.test(item.image) ? [item.image] : [],
         },
-        unit_amount: formatAmountForStripe(item.price),
+        unit_amount: formatAmountForStripe(Number(item.price) || 0),
       },
       quantity: item.quantity || 1,
     }));

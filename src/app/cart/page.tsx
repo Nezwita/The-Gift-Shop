@@ -6,23 +6,19 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useCart } from '@/lib/cart';
-import { loadStripe } from '@stripe/stripe-js';
-
-// Initialize Stripe client-side
-const stripePromise = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-  ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
-  : null;
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, cartTotal, cartCount, clearCart } = useCart();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
+  const [checkoutNotice, setCheckoutNotice] = useState<string | null>(null);
 
   const handleCheckout = async () => {
     if (cart.length === 0) return;
 
     setIsCheckingOut(true);
     setCheckoutError(null);
+    setCheckoutNotice(null);
 
     try {
       const response = await fetch('/api/create-checkout', {
@@ -45,18 +41,22 @@ export default function CartPage() {
       const data = await response.json();
 
       if (!response.ok) {
+        // 503 / payments_not_live: Stripe is not connected yet (budget-gated launch).
+        if (data.code === 'payments_not_live' || response.status === 503) {
+          setCheckoutNotice(
+            data.error ||
+              'Payments are not live yet. Nothing has been charged.'
+          );
+          return;
+        }
         throw new Error(data.error || 'Failed to create checkout');
       }
 
-      // Redirect to Stripe Checkout
+      // Stripe Checkout Session created — send the shopper to Stripe's hosted page.
       if (data.url) {
         window.location.href = data.url;
-      } else if (stripePromise && data.sessionId) {
-        const stripeInstance = await stripePromise;
-        if (stripeInstance) {
-          const { error } = await stripeInstance.redirectToCheckout({ sessionId: data.sessionId });
-          if (error) throw new Error(error.message);
-        }
+      } else {
+        throw new Error('Checkout is unavailable right now. Please try again.');
       }
     } catch (error: any) {
       console.error('Checkout error:', error);
@@ -179,6 +179,15 @@ export default function CartPage() {
                     <span>${cartTotal.toFixed(2)}</span>
                   </div>
                 </div>
+
+                {checkoutNotice && (
+                  <div className="bg-amber-50 text-amber-800 p-4 text-sm mb-4 border border-amber-200">
+                    <p className="font-bold uppercase tracking-widest text-xs mb-2">
+                      Payments are not live yet
+                    </p>
+                    <p>{checkoutNotice}</p>
+                  </div>
+                )}
 
                 {checkoutError && (
                   <div className="bg-red-50 text-red-600 p-4 text-sm mb-4 border border-red-100">

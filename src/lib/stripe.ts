@@ -1,10 +1,42 @@
 import Stripe from 'stripe';
 
-// Initialize Stripe server-side client
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder', {
-  apiVersion: '2025-03-31.chocolatey' as any,
-  typescript: true,
-});
+/**
+ * Resolve the server-side Stripe secret key.
+ *
+ * Returns null when payments are not configured (missing key, or the
+ * placeholder value that ships in .env.local). Callers must treat null as
+ * "payments are not live yet" and respond with a friendly state instead of
+ * crashing or returning a 500.
+ */
+export function getStripeSecretKey(): string | null {
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
+  if (!key) return null;
+  // Placeholder keys from the sample .env file are not real credentials.
+  if (key.startsWith('sk_test_placeholder') || key === 'sk_test_xxx') return null;
+  return key;
+}
+
+/** True only when a real-looking Stripe secret key is present. */
+export function isStripeConfigured(): boolean {
+  return getStripeSecretKey() !== null;
+}
+
+let cachedClient: Stripe | null = null;
+
+/**
+ * Lazily create the Stripe client so importing this module never throws when
+ * Stripe is not configured (which is the case for the current budget-gated
+ * pre-launch build).
+ */
+export function getStripe(): Stripe | null {
+  const key = getStripeSecretKey();
+  if (!key) return null;
+  if (!cachedClient) {
+    // No apiVersion pin: the SDK uses the version it was built against.
+    cachedClient = new Stripe(key, { typescript: true });
+  }
+  return cachedClient;
+}
 
 // Product price mapping — these are placeholder IDs until marketer finalizes the "Launch 15" list
 // Once Stripe products/prices are created in the dashboard, replace these values

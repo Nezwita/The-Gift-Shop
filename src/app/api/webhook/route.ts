@@ -1,9 +1,19 @@
 import { NextResponse } from 'next/server';
-import { stripe } from '@/lib/stripe';
+import { getStripe } from '@/lib/stripe';
 
 // Stripe webhook handler for post-payment processing
 export async function POST(request: Request) {
   try {
+    const stripe = getStripe();
+
+    // No Stripe credentials configured yet (budget-gated pre-launch build).
+    if (!stripe) {
+      return NextResponse.json(
+        { error: 'Payments are not live yet', code: 'payments_not_live' },
+        { status: 503 }
+      );
+    }
+
     const body = await request.text();
     const signature = request.headers.get('stripe-signature');
 
